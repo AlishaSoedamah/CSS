@@ -8,13 +8,18 @@ Carousel gemaakt met Romy, Thije en Braham
 Checkout met Nils
 
 Wat heb ik vandaag gedaan?
-Meer met 3d in css 
+Leuke spins met 3d in css en de carousel opdracht gepresenteerd
+[eerste](https://codepen.io/alishasoedamah/pen/EayBpja)
+[tweede](https://codepen.io/alishasoedamah/pen/raLEQNE)
 
 Hoeveel tijd heeft me dat gekost?
 4 uur
 
 Wat heb ik geleerd?
-3d stuff
+rotateZ()
+translateZ()
+
+in keyframes
 
 Wat ga ik morgen doen?
 CSS + BT voortgang bespreken
