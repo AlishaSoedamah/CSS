@@ -29,6 +29,19 @@ in keyframes
 
 Wat ga ik morgen doen?
 CSS + BT voortgang bespreken, bespreken wat ik ga doen voor de eindopdracht van dit vak
-<details open>
-   <summary>Week 1</summary>
+
+### Week 1
+<details>
+   <summary>Mijn eerste idee</summary>
+   Fruiger aero pannel die een trippy achtergrond bestuurd. Ik wil een 2d/3d toggle button tussen states maken.
+   Voor de achtergrond had ik een beetje dit in gedachte:
+   
+   - [inspo 1](https://codepen.io/soju22/pen/ywLZPV) 
+   - [inspo 2](https://codepen.io/soju22/pen/ywLZPV)
+   - [inspo 3](https://codepen.io/cathbailh/pen/xGBMbV)
+   - [inspo 4](https://codepen.io/dazld/pen/DydWyz)
+   - [inspo 4](https://codepen.io/atzedent/pen/VwORRGv)
+   - [btn inspo](https://codepen.io/atzedent/pen/VwORRGv)
+Volgens Sanne is dit makkelijk te doen.
+
 </details>
