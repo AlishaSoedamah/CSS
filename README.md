@@ -2,11 +2,11 @@
 CSS - mwdd
 
 ### dag 1 
-#### 18/2/2026
+#### 18.2.2026
 Carousel gemaakt met Romy, Thije en Braham, er was geen checkout vandaag!
 
 ### dag 2 
-#### 19/2/2026
+#### 19.2.2026
 Checkout met Nils
 
 Wat heb ik vandaag gedaan?
@@ -31,9 +31,24 @@ Wat ga ik morgen doen?
 CSS + BT voortgang bespreken, bespreken wat ik ga doen voor de eindopdracht van dit vak
 
 ### Week 1
-<details>
+<details open>
    <summary>Mijn eerste idee</summary>
    Fruiger aero pannel die een trippy achtergrond bestuurd. Ik wil een 2d/3d toggle button tussen states maken.
+
+   Inspo voor de buttons van de interface:
+   <img src="readme/btn.png">
+
+   Inspo container voor de buttons:
+   <img src="readme/interface.png">
+
+   Dit is een snelle schets van wat het kan worden
+   <img src="readme/idea.png">
+   - 2/3d buttons voor de toggle
+   - Een ? mode -> ik weet nog niet wat dit gaat worden
+   - Draai button voor om de rotatie kant te veranderen
+   - Scherm om de input van de user te laten zien
+
+
    Voor de achtergrond had ik een beetje dit in gedachte:
    
    - [inspo 1](https://codepen.io/soju22/pen/ywLZPV) 
@@ -42,4 +57,33 @@ Volgens Sanne is dit makkelijk te doen.
    - [inspo 3](https://codepen.io/dazld/pen/DydWyz)
    - [inspo 4](https://codepen.io/atzedent/pen/VwORRGv)
 
+</details>
+
+### dag 3
+#### 4.3.2026
+### dag 4 
+#### 5.3.2026
+### Week 2
+<details>
+   <summary>week 2 voortgang</summary>
+</details>
+
+### dag 5
+#### 11.3.2026
+### dag 6
+#### 12.3.2026
+### Week 3
+<details>
+   <summary>week 3 voortgang</summary>
+</details>
+
+### dag 7
+#### 18.3.2026
+
+### dag 8
+#### 19.3.2026
+
+### Week 4
+<details>
+   <summary>week 4 voortgang</summary>
 </details>
