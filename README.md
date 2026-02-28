@@ -87,3 +87,7 @@ Volgens Sanne is dit makkelijk te doen.
 <details>
    <summary>week 4 voortgang</summary>
 </details>
+
+[Gradient](https://developer.mozilla.org/en-US/play?uuid=80f6e3699c0e8b6c3b303a843d628ab813704dd3&state=VY1NDoMgGESv8mVWbYL9MV1R60nYoBChIhpA28R494aw6mqSl3kzO0yaHDgaZTfqnYzxJRDttDhdBamsdAJtc1V2a4UHQx8jOHJ5F57oY1UynOrHbfk%2BMzDaDiZxuteFHMJf%2FuaK18l%2BHMK8esWp8GrIqX06Ba0YdW7V5%2BKD4Z1PwZCMnnT%2Bl2HE8QM%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FGuides%2FImages%2FUsing_gradients%2F)
+[Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
+[Shapes thx Nils](https://9elements.github.io/fancy-border-radius/#61.39.31.24--.)
