@@ -19,36 +19,85 @@ main {
 }
 
 button {
+	width: 80px;
+	aspect-ratio: 1;
+	position: relative;
 	background: radial-gradient(at 53% 114%, rgb(100, 203, 251) 15px, rgb(0, 140, 255) 50%, rgb(0, 76, 255) 62%);
 	color: white;
-	padding: 30px;
+	padding: 10px;
 	border-radius: 55px;
-	border: 3px solid rgb(0, 0, 182);
-	box-shadow: inset 0 0 10px #ffffff;
-	border: 1px solid blue;
+	border: 2px solid rgb(0, 0, 182);
+	font-size: 24px;
+	font-weight: bold;
 	&:hover {
 		cursor: pointer;
+		background: radial-gradient(at 53% 114%, rgb(128, 215, 255) 15px, rgb(70, 172, 255) 50%, rgb(0, 73, 245) 62%);
 	}
 }
 
+button:nth-child(3) {
+	background: radial-gradient(at 53% 114%, rgb(209 156 255) 15px, rgb(110 0 255) 50%, rgb(40 0 255) 62%);
+}
+
+button:nth-child(4) {
+	background: radial-gradient(at 53% 114%, rgb(255, 171, 126) 15px, rgb(255, 94, 0) 50%, rgb(197, 46, 0) 62%);
+	border: 2px solid rgb(150, 0, 0);
+}
+
+button::before { 
+	content: "";
+	position: absolute;
+	inset-block-start: 5%;
+	inset-inline: 5%;
+	height: 50%;
+	border-radius: 52% 48% 6% 8% / 75% 73% 18% 16%;
+	background: linear-gradient(#fff, #fff2);
+}
+
 section {
-	position: relative;
     width: 320px;
     height: 270px;
-	border-radius: 39% 61% 76% 24% / 61% 31% 69% 39% ;
+	border-radius: 39% 61% 76% 24% / 61% 31% 69% 39%;
 	background-color: var(--grey);
-	/* box-shadow: inset 0 0 10px #ffffff; */
 	box-shadow: inset 0 0 30px #a4a4a4;
 }
 
-section ul {
+section ul:nth-child(1) {
+	margin: 40px 0 10px 0;
+	gap: 10px;
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	top: 41px;
     left: 25px;
-	box-shadow: inset 0 0 20px #ffffff;
-	border-radius: 400px 101px 135px 50px / 150px 64px 71px 25px;
-	background-color: blue;
+	box-shadow: inset 0 0 10px #000000;
+	border-radius: 39% 61% 76% 24% / 61% 31% 69% 39%;
+	background-color: rgb(0, 38, 255);
 	width: 261px;
     height: 112px;
+}
+
+
+section ul > li {
+	font-family: "Bitcount Prop Double", Arial;
+	color: #ffffff;
+	font-size: 3em;
+	list-style: none;
+}
+
+section ul:nth-child(2)
+{
+	display: grid;
+	grid-auto-columns: 40px 40px 40px;
+	li {
+
+		background-color: #000000;
+		width: 4px;
+		aspect-ratio: 1;
+		margin: 10px;
+	}
 }
 
 ul:nth-child(2) li, ul:nth-child(3) li {

@@ -82,25 +82,26 @@ animation-delay: calc(1s / sibling-count() * (sibling-index));
 
 Advanced Layouts van Niels
 
-Je kan responsive layouts maken met 1 lijn code in je grid container, auto-fill/auto-fit ipv mediaqueries.
+Je kunt responsive layouts maken met 1 lijn code in je grid container, auto-fill/auto-fit ipv mediaqueries.
 ```grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));```
 flex-basis: 0; maakt alle containers even groot, flex-basis: 200px; geeft ze een andere width
 
 [blog](https://9elements.com/blog/building-a-rock-solid-auto-grid/)
 
-Checkout met 
+Checkout met Aya A
 
 Wat heb ik vandaag gedaan?
-De workshop van Sanne gevolgd, de Weekly nerd van Nils gedaan.
+De workshop van Sanne gevolgd, de Weekly nerd van Nils gedaan, verder aan de eindopdracht
 
 Hoeveel tijd heeft me dat gekost?
 3 uur voor de code
-de rest van de tijd ging naar de WN en de 2 workshops
+de rest van de tijd ging naar de WN en de 2 workshops.
 
 Wat heb ik geleerd?
 Auto-grid minmax property
 
 Wat ga ik morgen doen?
+Dit vak en nog een WN, de input fixen als je op de buttons klikt
 
 ### dag 4 
 #### 5.3.2026
