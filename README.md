@@ -61,6 +61,47 @@ Volgens Sanne is dit makkelijk te doen.
 
 ### dag 3
 #### 4.3.2026
+3D workshop van Sanne
+
+Om een element 3D te maken heb je ```perspective(10em);``` en ```transform-style: perserve-3d```nodig.
+[Dingen die stuk](https://css-tricks.com/things-watch-working-css-3d/) gaan als je 3D gebruikt in CSS. 
+```grid-area: 1/1;``` om alles op dezelfde plek te zetten in als je met 3D gaat werken. Layout tab in de inspector voor als je beter wilt werken met grid. 
+
+```
+grid-area: 1/1/2/2; is eigenlijk dit
+
+grid-row-start: 1;
+grid-column-start: 1;
+grid-row-end: 2;
+grid-column-end: 2;
+```
+
+animation-delay: calc(1s / sibling-count() * (sibling-index));
+
+[sibling-index()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-index)
+
+Advanced Layouts van Niels
+
+Je kan responsive layouts maken met 1 lijn code in je grid container, auto-fill/auto-fit ipv mediaqueries.
+```grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));```
+flex-basis: 0; maakt alle containers even groot, flex-basis: 200px; geeft ze een andere width
+
+[blog](https://9elements.com/blog/building-a-rock-solid-auto-grid/)
+
+Checkout met 
+
+Wat heb ik vandaag gedaan?
+De workshop van Sanne gevolgd, de Weekly nerd van Nils gedaan.
+
+Hoeveel tijd heeft me dat gekost?
+3 uur voor de code
+de rest van de tijd ging naar de WN en de 2 workshops
+
+Wat heb ik geleerd?
+Auto-grid minmax property
+
+Wat ga ik morgen doen?
+
 ### dag 4 
 #### 5.3.2026
 ### Week 2
@@ -87,6 +128,9 @@ Volgens Sanne is dit makkelijk te doen.
 <details>
    <summary>week 4 voortgang</summary>
 </details>
+
+### ref
+CSS heeft zoveel. 
 
 [Gradient](https://developer.mozilla.org/en-US/play?uuid=80f6e3699c0e8b6c3b303a843d628ab813704dd3&state=VY1NDoMgGESv8mVWbYL9MV1R60nYoBChIhpA28R494aw6mqSl3kzO0yaHDgaZTfqnYzxJRDttDhdBamsdAJtc1V2a4UHQx8jOHJ5F57oY1UynOrHbfk%2BMzDaDiZxuteFHMJf%2FuaK18l%2BHMK8esWp8GrIqX06Ba0YdW7V5%2BKD4Z1PwZCMnnT%2Bl2HE8QM%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FGuides%2FImages%2FUsing_gradients%2F)
 [Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
