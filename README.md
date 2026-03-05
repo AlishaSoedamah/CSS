@@ -105,6 +105,45 @@ Dit vak en nog een WN, de input fixen als je op de buttons klikt
 
 ### dag 4 
 #### 5.3.2026
+
+Workshop van Nils
+```animation-delay: calc(sibling-index() * -0.5s) reverse```
+```animation-delay: calc(sibling-index() * 0.5s) normaal```
+
+[oklch](https://oklch.com/#0.7,0.1,188,100)
+
+Code om met een input iets te laten zien (alleen met CSS has)
+HTML
+```
+<label>
+  <input type="radio" value="2D" name="dimension">2D
+</label>
+
+<p></p>
+
+```
+CSS
+```
+body:has([value="2D"]:checked) p::before {
+  content:"2D ";
+}
+```
+Checkout met
+
+Wat heb ik vandaag gedaan?
+De workshop van Nils gevolgd over @property in css, de input waardes komen nu op het scherm
+een beetje aan de achtergrond van de site gewerkt. 
+
+Hoeveel tijd heeft me dat gekost?
+3 uur voor de code
+de rest van de tijd ging naar de WN en de 2 workshops.
+
+Wat heb ik geleerd?
+Hoe je dingen wel en niet laten zien met een toggle in CSS.
+
+Wat ga ik morgen doen?
+Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond te veranderen
+
 ### Week 2
 <details>
    <summary>week 2 voortgang</summary>
@@ -112,8 +151,19 @@ Dit vak en nog een WN, de input fixen als je op de buttons klikt
 
 ### dag 5
 #### 11.3.2026
+
+Wat heb ik vandaag gedaan?
+Hoeveel tijd heeft me dat gekost?
+Wat heb ik geleerd?
+Wat ga ik morgen doen?
+
 ### dag 6
 #### 12.3.2026
+t heb ik vandaag gedaan?
+Hoeveel tijd heeft me dat gekost?
+Wat heb ik geleerd?
+Wat ga ik morgen doen?
+
 ### Week 3
 <details>
    <summary>week 3 voortgang</summary>
