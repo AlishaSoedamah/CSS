@@ -136,13 +136,13 @@ Een beetje aan de achtergrond van de site gewerkt.
 
 Hoeveel tijd heeft me dat gekost?
 5 uur voor de code
-de rest van de tijd ging naar de WN en de 2 workshops.
+de rest van de tijd ging naar de 2 workshops.
 
 Wat heb ik geleerd?
-Hoe je dingen wel en niet laten zien met een toggle in CSS.
+Hoe je dingen wel en niet kan laten zien met een toggle in CSS.
 
 Wat ga ik morgen doen?
-Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond te veranderen
+Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond te veranderen in 3d enof ik er nog wat aan kan toevoegen.
 
 ### Week 2
 <details>
