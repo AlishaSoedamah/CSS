@@ -63,6 +63,7 @@ label::before {
 	background: linear-gradient(#fff, #fff2);
 }
 
+/* user input on screen */
 body:has([value="3D"]:checked) section ul > li::before {
   content:"3D";
 }
@@ -79,6 +80,16 @@ body:has([value="arrow-r"]:checked):has([value="3D"]:checked) section ul > li::b
   content:"3D + ?";
 }
 
+/* animation toggle */
+body:has([value="2D"]:checked) ol {
+    animation: --spin 30s infinite;
+}
+
+body:has([value="3D"]:checked) ol {
+    animation: --spin-3d 30s infinite;
+}
+
+/* checkbox */
 body:has([value="arrow-r"]:checked)
 {
 	background-color: hotpink;
@@ -109,7 +120,7 @@ section ul:nth-child(1) {
 	width: 261px;
     height: 112px;
 	box-shadow: inset 0 0 10px #000000;
-	border-radius: 39% 61% 76% 24% / 61% 31% 69% 39%;
+	border-radius: 43% 61% 76% 24% / 102% 67% 80% 42%;
 }
 
 section ul > li {
@@ -249,23 +260,28 @@ ul:nth-child(3) > li > ul {
 
 /* background */
 ol {
+	z-index: -1;
   --size: 250px;
   list-style: none;
   margin: 0 auto;
   padding: 10px;
-  animation-name: --spin;
-  animation-duration: 40s;
-
+  /* animation-name: --spin;
+  animation-duration: 30s; */
+    /* animation: --spin 30s infinite; */
+  transform-style: preserve-3d;
+  perspective: 10em;
 }
 
 ol li {
   width: var(--size);
   aspect-ratio: 1;
-  outline: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
+	animation:  --shape-transform  2s infinite;
+
 }
 
 ol li ol {
-  --size: calc(var(--size) + 50px);
+  --size: calc(var(--size) + 100px);
 }
 
 @keyframes --spin {
@@ -278,13 +294,31 @@ ol li ol {
 	}
 }
 
-
-@keyframes --spin-three-dim {
+@keyframes --spin-3d {
 	0%, 100% {
-		transform: Zrotate(0deg);
+		transform:
+			rotateY(1turn)
+			rotateX(10deg)
+			translateZ( calc(var(--size) * 1.3));
 	}
 
 	50% {
-		transform: Zrotate(260deg);
+		transform:
+			rotateY(0turn)
+			rotateX(0deg)
+			translateZ( calc(var(--size) * 1.3));
+	}
+}
+
+
+@keyframes --shape-transform {
+	0%, 100% {
+		scale: .9;
+		border-radius: 90%;
+	}
+
+	50% {
+		scale: 2;
+		border-radius: 0%;
 	}
 }

@@ -63,7 +63,7 @@ Volgens Sanne is dit makkelijk te doen.
 #### 4.3.2026
 3D workshop van Sanne
 
-Om een element 3D te maken heb je ```perspective(10em);``` en ```transform-style: perserve-3d```nodig.
+Om een element 3D te maken heb je ```perspective: (10em);``` en ```transform-style: preserve-3d```nodig.
 [Dingen die stuk](https://css-tricks.com/things-watch-working-css-3d/) gaan als je 3D gebruikt in CSS. 
 ```grid-area: 1/1;``` om alles op dezelfde plek te zetten in als je met 3D gaat werken. Layout tab in de inspector voor als je beter wilt werken met grid. 
 
@@ -128,14 +128,14 @@ body:has([value="2D"]:checked) p::before {
   content:"2D ";
 }
 ```
-Checkout met
+Checkout met Senna
 
 Wat heb ik vandaag gedaan?
-De workshop van Nils gevolgd over @property in css, de input waardes komen nu op het scherm
-een beetje aan de achtergrond van de site gewerkt. 
+De workshop van Nils gevolgd over @property in css, de input waardes komen nu op het scherm.
+Een beetje aan de achtergrond van de site gewerkt. 
 
 Hoeveel tijd heeft me dat gekost?
-3 uur voor de code
+5 uur voor de code
 de rest van de tijd ging naar de WN en de 2 workshops.
 
 Wat heb ik geleerd?
