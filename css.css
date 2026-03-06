@@ -25,6 +25,7 @@ input {
 }
 
 label {
+	margin: 0 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -284,6 +285,11 @@ ol li ol {
   --size: calc(var(--size) + 100px);
 }
 
+form {
+	display: flex;
+	justify-content: center;
+}
+
 @keyframes --spin {
 	0%, 100% {
 		transform: rotate(0deg);
@@ -314,11 +320,11 @@ ol li ol {
 @keyframes --shape-transform {
 	0%, 100% {
 		scale: .9;
-		border-radius: 90%;
+		border-radius: 30%;
 	}
 
 	50% {
-		scale: 2;
+		scale: 1;
 		border-radius: 0%;
 	}
 }
