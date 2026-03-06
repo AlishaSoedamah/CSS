@@ -276,7 +276,7 @@ ol li {
   width: var(--size);
   aspect-ratio: 1;
   border: 1px solid rgb(255, 255, 255);
-	animation:  --shape-transform  2s infinite;
+	animation:  --shape-transform  2s infinite, --shape-transform 4s infinite;
 
 }
 
