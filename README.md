@@ -158,6 +158,18 @@ Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond 
    - Gebruik nog een architecture feature.
    - Maak een leuke header font om te
    - Maak het een geheel
+   - De performance van de site
+</details>
+
+# Animatie experimenten
+<details>
+   <summary>Klik hierop om mijn animatie experimenten te zien!</summary>
+
+   Eerste animatie met rotate: 
+   ![animatie 1](readme/anim1.gif)
+
+   Meer blokjes in de lijst en van 4s naar 2s
+   ![animatie 2](readme/anim2.gif)
 </details>
 
 ### dag 5

@@ -302,6 +302,12 @@ ol li ol {
   --size: calc(var(--size) + 100px);
 }
 
+div {
+	background-image: linear-gradient(45deg, #85E9FF, gold);
+	mix-blend-mode: plus-lighter;
+	filter: blur(5px);
+}
+
 @keyframes --spin {
 	0%, 100% {
 		transform: rotate(0deg);
@@ -329,33 +335,24 @@ ol li ol {
 }
 
 
-@keyframes --shape-transform {
-	0%, 100% {
-		scale: .9;
-		border-radius: 60%;
-	}
-
-	50% {
-		scale: 2;
-		border-radius: 0%;
-	}
-}
-
 @media (min-width: 500px) {
 	aside {
 		top: 42px;
-    	left: 313px;
+        left: 319px;
+		width: 50px;
+    	height: 50px;
+		border-radius: 27px;
 	}
 
 	ul:nth-child(2)
 	{
-		left: 282px;
-		top: -200px;
+	    left: 298px;
+        top: -187px;
 	}
 
 	ul:nth-child(3)
 	{
-		left: 298px;
-        bottom: 341px;
+	    left: 317px;
+        bottom: 322px;
 	}
 }
