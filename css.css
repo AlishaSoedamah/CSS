@@ -15,7 +15,7 @@ body {
 main {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	flex-direction: column;
 	height: 100vh;
 	position: relative;
@@ -42,7 +42,8 @@ aside {
 
 form {
 	display: flex;
-	height: 80px;
+	margin: 0px 0px 23px 25px;
+	height: 60px;
 }
 
 label {
@@ -50,7 +51,7 @@ label {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 80px;
+	width: 60px;
 	aspect-ratio: 1;
 	position: relative;
 	background: radial-gradient(at 53% 114%, rgb(100, 203, 251) 10px, rgb(0, 140, 255) 41%, rgb(0, 76, 255) 62%);
@@ -58,7 +59,7 @@ label {
 	padding: 10px;
 	border-radius: 55px;
 	border: 2px solid rgb(0, 0, 182);
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: bold;
 	&:hover {
 		cursor: pointer;
@@ -105,7 +106,7 @@ body:has([value="3D"]:checked) ol {
 /* checkbox */
 body:has([value="arrow-r"]:checked)
 {
-	background-color: hotpink;
+	background-color: rgb(0, 213, 255);
 }
 
 body:has([value="arrow-r"]:checked) label:nth-child(4) {
@@ -116,7 +117,7 @@ section {
 	display: grid;
     width: 320px;
     height: 270px;
-	border-radius: 39% 61% 76% 24% / 61% 31% 69% 39%;
+	border-radius: 39% 61% 76% 24% / 61% 33% 78% 39%;
 	background: var(--grey);
 	box-shadow: inset 0 0 30px #5a5a5a,
 	 10px 10px 10px #00000022;
@@ -128,7 +129,7 @@ section ul:nth-child(1) {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 40px 0px 10px 32px;
+	margin: 40px 0 0 32px;
 	padding: 0;
 	background-color: rgb(0, 38, 255);
 	width: 261px;

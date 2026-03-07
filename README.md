@@ -156,7 +156,7 @@ Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond 
 
    - Laat de borders licht geven op de ? optie. 
    - Gebruik nog een architecture feature.
-   - Maak een leuke header font om te
+   - Maak een leuke header font om te oefenen met typografie in CSS
    - Maak het een geheel
    - De performance van de site
 </details>
