@@ -1,5 +1,14 @@
 :root {
 	--grey: rgb(208, 208, 208);
+	--white: rgb(255, 255, 255);
+
+  /* pixel art */
+  --outline-pxl: #016063;
+  --outline-light-pxl: #068A90;
+  --main-pxl: #00E2BA;
+  --highlight-pxl: #20FAE4;
+  --shadow-pxl: #11AB9F;
+  --small-shadow-pxl: #038B8D;
 }
 
 * {
@@ -19,6 +28,10 @@ main {
 	flex-direction: column;
 	height: 100vh;
 	position: relative;
+}
+
+h1 {
+  color: var(--white);
 }
 
 input {
@@ -95,11 +108,11 @@ body:has([value="arrow-r"]:checked):has([value="3D"]:checked) section ul > li::b
 }
 
 /* animation toggle */
-body:has([value="2D"]:checked) ol {
-    animation: --spin 30s infinite;
+body:has([value="2D"]:checked) ol > li{
+   animation:  --spin  20s infinite;
 }
 
-body:has([value="3D"]:checked) ol {
+body:has([value="3D"]:checked) ol > li {
     animation: --spin-3d 30s infinite;
 }
 
@@ -283,55 +296,222 @@ ol {
   list-style: none;
   margin: 0 auto;
   padding: 10px;
-  /* animation-name: --spin;
-  animation-duration: 30s; */
-    /* animation: --spin 30s infinite; */
   transform-style: preserve-3d;
-  perspective: 10em;
+  perspective: 30em;
 }
 
 ol li {
 	width: var(--size);
 	aspect-ratio: 1;
-	border: 1px solid #fff;
-	  /* mix-blend-mode: plus-lighter;
-	      filter: blur(50px); */
-	animation:  --shape-transform  2s infinite, --shape-transform 4s infinite;
+	border: 2px solid #0df7c8;
+	opacity: 0.8;
+
+	animation: --spin-3d 30s infinite;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: backwards;
+	animation-delay: calc(1s * sibling-index());
 }
 
 ol li ol {
   --size: calc(var(--size) + 100px);
 }
 
+
 div {
-	background-image: linear-gradient(45deg, #85E9FF, gold);
-	mix-blend-mode: plus-lighter;
-	filter: blur(5px);
+  width: 1em;
+  aspect-ratio: 1;
+  
+  box-shadow: 
+    6em 0 var(--outline-pxl),
+    7em 0 var(--outline-pxl),
+    8em 0 var(--outline-pxl),
+    9em 0 var(--outline-pxl),
+    5em 1em var(--outline-pxl),
+    6em 1em var(--highlight-pxl),
+    7em 1em var(--white),
+    8em 1em var(--white),
+    9em 1em var(--highlight-pxl),
+    10em 1em var(--outline-pxl),
+    4em 2em var(--outline-pxl),
+    5em 2em var(--highlight-pxl),
+    6em 2em var(--shadow-pxl),
+    7em 2em var(--shadow-pxl),
+    8em 2em var(--shadow-pxl),
+    9em 2em var(--shadow-pxl),
+    10em 2em var(--highlight-pxl),
+    11em 2em var(--outline-pxl),
+    4em 3em var(--outline-pxl),
+    5em 3em var(--shadow-pxl),
+    6em 3em var(--main-pxl),
+    7em 3em var(--main-pxl),
+    8em 3em var(--main-pxl),
+    9em 3em var(--main-pxl),
+    10em 3em var(--shadow-pxl),
+    11em 3em var(--outline-pxl),
+    4em 4em var(--outline-light-pxl),
+    5em 4em var(--main-pxl),
+    6em 4em var(--main-pxl),
+    7em 4em var(--main-pxl),
+    8em 4em var(--main-pxl),
+    9em 4em var(--main-pxl),
+    10em 4em var(--main-pxl),
+    11em 4em var(--outline-light-pxl),
+    4em 5em var(--outline-light-pxl),
+    5em 5em var(--highlight-pxl),
+    6em 5em var(--main-pxl),
+    7em 5em var(--main-pxl),
+    8em 5em var(--main-pxl),
+    9em 5em var(--main-pxl),
+    10em 5em var(--highlight-pxl),
+    11em 5em var(--outline-light-pxl),
+    5em 6em var(--outline-light-pxl),
+    6em 6em var(--highlight-pxl),
+    7em 6em var(--white),
+    8em 6em var(--white),
+    9em 6em var(--highlight-pxl),
+    10em 6em var(--outline-light-pxl),
+    4em 7em var(--outline-pxl),
+    5em 7em var(--outline-pxl),
+    6em 7em var(--outline-light-pxl),
+    7em 7em var(--outline-light-pxl),
+    8em 7em var(--outline-light-pxl),
+    9em 7em var(--outline-light-pxl),
+    10em 7em var(--outline-pxl),
+    11em 7em var(--outline-pxl),
+    3em 8em var(--outline-pxl),
+    4em 8em var(--white),
+    5em 8em var(--outline-pxl),
+    6em 8em var(--highlight-pxl),
+    7em 8em var(--white),
+    8em 8em var(--white),
+    9em 8em var(--highlight-pxl),
+    10em 8em var(--outline-pxl),
+    11em 8em var(--white),
+    12em 8em var(--outline-pxl),
+    2em 9em var(--outline-pxl),
+    3em 9em var(--highlight-pxl),
+    4em 9em var(--outline-pxl),
+    5em 9em var(--small-shadow-pxl),
+    6em 9em var(--shadow-pxl),
+    7em 9em var(--highlight-pxl),
+    8em 9em var(--highlight-pxl),
+    9em 9em var(--shadow-pxl),
+    10em 9em var(--small-shadow-pxl),
+    11em 9em var(--outline-pxl),
+    12em 9em var(--highlight-pxl),
+    13em 9em var(--outline-pxl),
+    1em 10em var(--outline-pxl),
+    2em 10em var(--highlight-pxl),
+    3em 10em var(--outline-pxl),
+    4em 10em var(--small-shadow-pxl),
+    5em 10em var(--shadow-pxl),
+    6em 10em  var(--shadow-pxl),
+    7em 10em  var(--shadow-pxl),
+    8em 10em  var(--shadow-pxl),
+    9em 10em  var(--shadow-pxl),
+    10em 10em  var(--shadow-pxl),
+    11em 10em var(--small-shadow-pxl),
+    12em 10em var(--outline-pxl),
+    13em 10em var(--highlight-pxl),
+    14em 10em var(--outline-pxl),
+    0 11em var(--outline-pxl),
+    1em 11em var(--highlight-pxl),
+    2em 11em var(--highlight-pxl),
+    3em 11em var(--outline-pxl),
+    4em 11em var(--shadow-pxl),
+    5em 11em var(--main-pxl),
+    6em 11em var(--shadow-pxl),
+    7em 11em var(--shadow-pxl),
+    8em 11em var(--shadow-pxl),
+    9em 11em var(--shadow-pxl),
+    10em 11em var(--main-pxl),
+    11em 11em var(--shadow-pxl),
+    12em 11em var(--outline-pxl),
+    13em 11em var(--highlight-pxl),
+    14em 11em var(--highlight-pxl),
+    15em 11em var(--outline-pxl),
+    0 12em var(--outline-pxl),
+    1em 12em var(--white),
+    2em 12em var(--outline-pxl),
+    3em 12em var(--shadow-pxl),
+    4em 12em var(--main-pxl),
+    5em 12em var(--main-pxl),
+    6em 12em var(--main-pxl),
+    7em 12em var(--main-pxl),
+    8em 12em var(--main-pxl),
+    9em 12em var(--main-pxl),
+    10em 12em var(--main-pxl),
+    11em 12em var(--main-pxl),
+    12em 12em var(--shadow-pxl),
+    13em 12em var(--outline-pxl),
+    14em 12em var(--white),
+    15em 12em var(--outline-pxl),
+    1em 13em var(--outline-pxl),
+    2em 13em var(--outline-pxl),
+    3em 13em var(--highlight-pxl),
+    4em 13em var(--main-pxl),
+    5em 13em var(--main-pxl),
+    6em 13em var(--main-pxl),
+    7em 13em var(--main-pxl),
+    8em 13em var(--main-pxl),
+    9em 13em var(--main-pxl),
+    10em 13em var(--main-pxl),
+    11em 13em var(--main-pxl),
+    12em 13em var(--highlight-pxl),
+    13em 13em var(--outline-pxl),
+    14em 13em var(--outline-pxl),
+    2em 14em var(--outline-pxl),
+    3em 14em var(--highlight-pxl),
+    4em 14em var(--highlight-pxl),
+    5em 14em var(--highlight-pxl),
+    6em 14em var(--white),
+    7em 14em var(--white),
+    8em 14em var(--white),
+    9em 14em var(--white),
+    10em 14em var(--highlight-pxl),
+    11em 14em var(--highlight-pxl),
+    12em 14em var(--highlight-pxl),
+    13em 14em var(--outline-pxl),
+    3em 15em var(--outline-pxl),
+    4em 15em var(--outline-pxl),
+    5em 15em var(--outline-pxl),
+    6em 15em var(--outline-pxl),
+    7em 15em var(--outline-pxl),
+    8em 15em var(--outline-pxl),
+    9em 15em var(--outline-pxl),
+    10em 15em var(--outline-pxl),
+    11em 15em var(--outline-pxl),
+    12em 15em var(--outline-pxl);
 }
 
 @keyframes --spin {
 	0%, 100% {
 		transform: rotate(0deg);
+		/* scale: 0.5; */
+		border-radius: 20px;
 	}
 
 	50% {
 		transform: rotate(260deg);
+		/* scale: 1; */
+		border-radius: 0px;
 	}
 }
 
 @keyframes --spin-3d {
 	0%, 100% {
 		transform:
-			rotateY(1turn)
-			rotateX(10deg)
+			rotateY(0turn)
+			rotateX(0deg)
 			translateZ( calc(var(--size) * 1.3));
 	}
 
 	50% {
 		transform:
-			rotateY(0turn)
-			rotateX(0deg)
-			translateZ( calc(var(--size) * 1.3));
+			rotateY(1turn)
+			rotateX(360deg)
+			translateZ( calc(var(--size) * 1.4));
 	}
 }
 

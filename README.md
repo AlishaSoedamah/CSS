@@ -148,6 +148,7 @@ Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond 
 <details>
    <summary>week 2 voortgang</summary>
    Notes van Sanne: 
+   
    - Moet nog iets met typografie doen dat past bij de website
    - New css architecture features: @layer, container queries, style queries, @functions, if()
    - sibling-index voor de 3d animatie
