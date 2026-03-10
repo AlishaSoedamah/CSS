@@ -1,5 +1,6 @@
 # CSS
 CSS - mwdd
+Pure CSS control pannel!
 
 ### dag 1 
 #### 18.2.2026
@@ -176,10 +177,29 @@ Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond 
 ### dag 5
 #### 11.3.2026
 
-Wat heb ik vandaag gedaan?
-Hoeveel tijd heeft me dat gekost?
-Wat heb ik geleerd?
-Wat ga ik morgen doen?
+<b>Wat heb ik vandaag gedaan?</b>
+Ik heb besloten om de interface te veranderen omdat er simpelweg nieg genoeg plek was voor de buttons in mijn oude pannel.
+Hier passen maar 4 buttons in en de vorm van de interface vond ik te lastig en niet meer mooi:
+<img src="readme/veryold.png">
+
+Zelfs met extra borders/kleur was het niet te redden
+<img src="readme/past.png">
+
+Ik nam vooral inspo van de interface van Winamp voro het nieuwe ontwerp:
+<img src="readme/inspo-new.png">
+
+Dit is het idee van de nieuwe interface die ik aan het bouwen ben:
+<img src="readme/newinterface.png">
+
+Hoe ik het (denk ik) ga uitbouwen met HTML tags
+<img src="readme/html-idea.png">
+
+Nu wordt het meer een mix van tech/en de frutiger aero stijl
+
+<b>Hoeveel tijd heeft me dat gekost?</b>
+6 uur
+<b>Wat heb ik geleerd?</b>
+<b>Wat ga ik morgen doen?</b>
 
 ### dag 6
 #### 12.3.2026
@@ -204,9 +224,22 @@ Wat ga ik morgen doen?
    <summary>week 4 voortgang</summary>
 </details>
 
+<details>
+   <summary>Waar ik trots op ben!</summary>
+   Deze button:
+   <img src="readme/btn-site.png">
+   De charms op de chain:
+   <img src="readme/charms.png">
+</details>
+
 ### ref
 CSS heeft zoveel. 
 
 [Gradient](https://developer.mozilla.org/en-US/play?uuid=80f6e3699c0e8b6c3b303a843d628ab813704dd3&state=VY1NDoMgGESv8mVWbYL9MV1R60nYoBChIhpA28R494aw6mqSl3kzO0yaHDgaZTfqnYzxJRDttDhdBamsdAJtc1V2a4UHQx8jOHJ5F57oY1UynOrHbfk%2BMzDaDiZxuteFHMJf%2FuaK18l%2BHMK8esWp8GrIqX06Ba0YdW7V5%2BKD4Z1PwZCMnnT%2Bl2HE8QM%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FGuides%2FImages%2FUsing_gradients%2F)
 [Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
-[Shapes thx Nils](https://9elements.github.io/fancy-border-radius/#61.39.31.24--.)
+[Fun shapes with border-radius](https://9elements.github.io/fancy-border-radius/#61.39.31.24--.)
+[Inset](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/inset)
+[:has](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has)
+[last-of-type](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:last-of-type)
+[pixel-art refrence](https://itsfelpo.itch.io/frutiger-aero)
+> Layouts don't have to be boring - Nils
