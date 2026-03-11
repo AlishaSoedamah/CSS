@@ -45,6 +45,10 @@ main {
 	position: relative;
 }
 
+article {
+	position: relative;
+}
+
 h1 {
   color: var(--white);
 }
@@ -70,7 +74,9 @@ section {
 	border-radius: 0 100px 100px 0;
     form:nth-child(2) {
         display: grid;
-        /* background: red; */
+		position: relative;
+		gap: 10px;
+		margin-top: 25px;
     }
 }
 
@@ -164,7 +170,6 @@ dl:not(dl dl) {
 	background-color: var(--screen);
 	border-radius: 15px;
 	margin: 0 0 20px 20px;
-    padding: 13px;
 	display: grid;
     justify-items: center;
   	template-columns: repeat(auto-fill, 200px);
@@ -192,10 +197,10 @@ section dl dd:nth-child(1) > dl > dt {
 	font-size: 20px;
 }
 
-/* deco screen */
+/* globe */
 section dl dd:nth-child(3) > dl > dd > dl {
 	display: grid;
-	place-items:center;
+	place-items: center;
 	perspective: 1000px;
 	transform-style: preserve-3d;
 	animation: --rotatedeco 15s linear infinite;
@@ -231,13 +236,60 @@ section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(5) {
 	 transform: rotateY(288deg);
 }
 
+/* last deco item screen */
 section dl dd:nth-child(4) > dl > dd {
-	font-size: 10px;
 	text-align: right;
 }
 
-article {
+section dl dd:nth-child(4) > dl > dd:nth-child(5) {
 	position: relative;
+	background-color: var(--white);
+	width: 7px;
+	height: 10px;
+	margin-left: 10px;
+	&::before {
+		content: "";
+		right: 0px;
+		position: absolute;
+		width: 7px;
+		height: 15px;
+		background-color: var(--white);
+		margin-right: 9px;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		width: 7px;
+		height: 5px;
+		background-color: var(--white);
+		margin-left: 2px;
+	}
+}
+
+/* turn knob */
+form:nth-child(2) label:nth-child(4){
+	position: absolute;
+	right: 30px;
+	background-color: var(--light-grey);
+	border-radius: 50px;
+	width: 70px;
+	aspect-ratio: 1;
+	box-shadow: 0 0 5px #000000ae, 0 4px 5px #ffffff90;
+	input[type="range"] {
+	    position: absolute;
+	    opacity: 0;
+	    margin: 0;
+   }
+   > div {
+		position: absolute;
+		left: 50%;
+		top: 70%;
+		width: 10px;
+        height: 10px;
+		border-radius: 10px;
+		background: var(--btn);
+		cursor: pointer;
+   }
 }
 
 /* two bottom buttons */
@@ -258,8 +310,8 @@ aside
 
 form:nth-child(2) label:nth-child(1) {
     background-color: var(--btn);
-	padding: 10px;
-	width: 50px;
+	padding: 5px;
+	width: 40px;
 	border-radius: 40px;
 	box-shadow: 0 0 5px #0000007c, 0 4px 5px #ffffff87;
 	&:hover {
@@ -277,19 +329,25 @@ input[type="radio"]:checked label {
 
 mark {
     background-color: transparent;
+	font-size: 12px;
 }
 
 mark::after {
     content: "";
     display: inline-block;
-    margin-left: 10px;
-    width: 10px;
+    margin-left: 13px;
+    width: 7px;
     aspect-ratio: 1;
     border-radius: 10px;
     background-color: var(--light);
 	box-shadow:
 		0 0 30px 3px rgb(66, 255, 255),
 		0 0 10px 1px #0ff;
+}
+
+mark:nth-child(3)::after
+{ 
+	margin-left: 42px;
 }
 
 aside label {
@@ -632,16 +690,16 @@ ol li {
 	border: 1px solid #0df7c8;
 	opacity: 0.8;
 
-	animation: --spin-3d 20s infinite;
+	/* animation: --spin-3d 20s infinite; */
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
 	animation-fill-mode: backwards;
 	animation-delay: calc(2ms * sibling-index());
 }
-
+/* 
 ol li ol {
   --size: calc(var(--size) + 100px);
-}
+} */
 
 @keyframes --spin {
 	0%, 100% {
