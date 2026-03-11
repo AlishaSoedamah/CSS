@@ -104,6 +104,7 @@ fieldset {
     }
 }
 
+/* tab */
 header {
 	display: flex;
 	align-items: center;
@@ -136,20 +137,6 @@ details > details {
 	text-align: left;
 }
 
-section ul {
-	list-style: none;
-	width: 350px;
-    height: 110px;
-	background-color: var(--screen);
-	border-radius: 15px;
-	margin: 0 0 20px 20px;
-    padding: 15px;
-    li {
-        color: var(--white);
-        font-size: 3em;
-    }
-}
-
 details > summary {
   list-style: none;
 }
@@ -167,6 +154,86 @@ details[open] {
 	color: var(--black);
     background-color: rgb(203, 203, 203);
     height: 75px;
+}
+
+/* SCREEN */
+dl:not(dl dl) {
+	list-style: none;
+	width: 350px;
+    height: 120px;
+	background-color: var(--screen);
+	border-radius: 15px;
+	margin: 0 0 20px 20px;
+    padding: 13px;
+	display: grid;
+    justify-items: center;
+  	template-columns: repeat(auto-fill, 200px);
+	text-align: center;
+	align-items: center;
+}
+
+dd {
+	color: var(--white);
+}
+
+section dl dd {
+	grid-area: 1;
+}
+
+section dl dd:nth-child(1) > dl > dd {
+    color: var(--white);
+    font-size: 3em;
+}
+
+section dl dd:nth-child(1) > dl > dt {
+	background-color: var(--white);
+	color: var(--screen);
+	width: 50px;
+	font-size: 20px;
+}
+
+/* deco screen */
+section dl dd:nth-child(3) > dl > dd > dl {
+	display: grid;
+	place-items:center;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	animation: --rotatedeco 15s linear infinite;
+}
+
+section dl dd:nth-child(3) > dl > dd > dl > dd {
+	grid-area: 1/1;
+  	width: 70px;
+	margin-top: 5px;
+  	aspect-ratio: 1;
+  	border: 1px solid white;
+  	border-radius: 100px;
+}
+
+section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(1) {
+	 transform: rotateY(0);
+}
+
+
+section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(2) {
+	 transform: rotateY(72deg);
+}
+
+section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(3) {
+	 transform: rotateY(144deg);
+}
+
+section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(4) {
+	 transform: rotateY(216deg);
+}
+
+section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(5) {
+	 transform: rotateY(288deg);
+}
+
+section dl dd:nth-child(4) > dl > dd {
+	font-size: 10px;
+	text-align: right;
 }
 
 article {
@@ -201,13 +268,6 @@ form:nth-child(2) label:nth-child(1) {
     input {
         display: none;
     }
-}
-
-section ul > li:nth-child(1){
-	font-size: 20px;
-	color: var(--screen);
-	background-color: var(--white);
-	width: 50px;
 }
 
 /* 
@@ -268,44 +328,8 @@ aside label::before {
 	background: linear-gradient(#fff, #fff2);
 }
 
-/* user input on screen */
-body:has([value="3D"]:checked) section ul > li:nth-child(2)::after {
-  content:"3D";
-}
-
-body:has([value="2D"]:checked) section ul > li:nth-child(2)::after {
-  content:"2D";
-}
-
-body:has([value="arrow-r"]:checked):has([value="2D"]:checked) section ul > li:nth-child(2)::after {
-  content:"2D + ???";
-}
-
-body:has([value="arrow-r"]:checked):has([value="3D"]:checked) section ul > li:nth-child(2)::after {
-  content:"3D + ???";
-}
-
-/* animation toggle */
-body:has([value="2D"]:checked) ol > li{
-   animation:  --spin  20s infinite;
-}
-
-body:has([value="3D"]:checked) ol > li {
-    animation: --spin-3d 30s infinite;
-}
-
-/* checkbox */
-body:has([value="arrow-r"]:checked)
-{
-	background-color: rgb(0, 213, 255);
-}
-
-/* body:has([value="arrow-r"]:checked) label:nth-child(4) {
-	background: radial-gradient(at 53% 114%, rgb(255 241 176) 15px, rgb(255 158 0) 50%, rgb(255 60 0) 62%);
-} */
-
 /* 😭 */
-main > article > div {
+main > article > span {
 	position: absolute;
 	bottom: 558px;
 	left: 0;
@@ -395,13 +419,27 @@ main > article > div {
     11em 15em var(--outline-pxl), 12em 15em var(--outline-pxl);
 }
 
+section ul:nth-child(1) > li:nth-child(1) {
+	aspect-ratio: 2/1;
+	font-size: 20px;
+	color: var(--screen);
+	background-color: var(--white);
+	width: 50px;
+}
+
+section > section ul:nth-child(1) > li {
+	border-radius: 0;
+	background-color: transparent;
+}
+
+
 /* chain */
-ul li{
+ul li {
 	margin: 0;
 	padding: 0;
 }
 
-ul:nth-child(4) li, ul:nth-child(3) li {
+ul:nth-of-type(1) > li, ul:nth-of-type(2) > li {
 	width: 10px;
 	aspect-ratio: 1;
 	background-color: var(--grey);
@@ -533,6 +571,47 @@ article > ul:nth-of-type(2) > li:last-child > ul {
 	}
 }
 
+/**************************/
+/*    FUNctionality :D    */
+/*  user input on screen  */
+/**************************/
+
+body:has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content:"3D";
+}
+
+body:has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content:"2D";
+}
+
+body:has([value="arrow-r"]:checked):has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content:"2D + ???";
+}
+
+body:has([value="arrow-r"]:checked):has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content:"3D + ???";
+}
+
+/* animation toggle */
+body:has([value="2D"]:checked) ol > li{
+   animation:  --spin  20s infinite;
+}
+
+body:has([value="3D"]:checked) ol > li {
+    animation: --spin-3d 30s infinite;
+}
+
+/* checkbox */
+body:has([value="arrow-r"]:checked)
+{
+	background-color: rgb(0, 213, 255);
+}
+
+/* body:has([value="arrow-r"]:checked) label:nth-child(4) {
+	background: radial-gradient(at 53% 114%, rgb(255 241 176) 15px, rgb(255 158 0) 50%, rgb(255 60 0) 62%);
+} */
+
+
 /* background */
 ol {
 	display: grid;
@@ -607,4 +686,13 @@ ol li ol {
 	    left: 317px;
         bottom: 322px;
 	}
+}
+
+@keyframes --rotatedeco {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }

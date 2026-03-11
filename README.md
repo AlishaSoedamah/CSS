@@ -1,4 +1,4 @@
-# CSS
+# CSS to the rescue, 0 divs used
 CSS - mwdd
 Pure CSS control pannel!
 
