@@ -177,7 +177,31 @@ Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond 
 ### dag 5
 #### 11.3.2026
 
+Checkout met Aya B
+
 <b>Wat heb ik vandaag gedaan?</b>
+Workshop van Sanne gevolgd.
+color: color(display-p3 .5 .5 1);
+de beste gradients maak je met oklsh()
+
+[examples](https://cmda-minor-web.github.io/css-to-the-rescue-2526/)
+
+### SVG filters
+[alle filters in SVG](https://yoksel.github.io/svg-filters/)
+
+```
+<svg>
+  <defs>
+    <filter>
+      //filter style
+    </filter>
+  </defs>
+</svg>
+```
+[Noise in Codepen](https://codepen.io/alishasoedamah/pen/jEMVGWM?editors=1100)
+[SVG convert](https://yoksel.github.io/url-encoder/)
+[Video die ik heb gebruikt](https://www.youtube.com/watch?v=1bYAwpPPD6U)
+
 Ik heb besloten om de interface te veranderen omdat er simpelweg nieg genoeg plek was voor de buttons in mijn oude pannel.
 Hier passen maar 4 buttons in en de vorm van de interface vond ik te lastig en niet meer mooi:
 <img src="readme/veryold.png">
@@ -198,12 +222,16 @@ Nu wordt het meer een mix van tech/en de frutiger aero stijl
 
 <b>Hoeveel tijd heeft me dat gekost?</b>
 6 uur
+
 <b>Wat heb ik geleerd?</b>
+nth-of-type en SVG filters
+
 <b>Wat ga ik morgen doen?</b>
+De draaiknop af maken
 
 ### dag 6
 #### 12.3.2026
-t heb ik vandaag gedaan?
+wat heb ik vandaag gedaan?
 Hoeveel tijd heeft me dat gekost?
 Wat heb ik geleerd?
 Wat ga ik morgen doen?
@@ -216,8 +244,6 @@ Wat ga ik morgen doen?
 ### dag 7
 #### 18.3.2026
 
-### dag 8
-#### 19.3.2026
 
 ### Week 4
 <details>
