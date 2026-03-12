@@ -231,18 +231,35 @@ De draaiknop af maken
 
 ### dag 6
 #### 12.3.2026
-wat heb ik vandaag gedaan?
+Wat heb ik vandaag gedaan?
+Veel tijd in de draaiknop gestopt. Ik moet nog een goede header maken voor de site maar daar ga ik volgende week aan zitten. 
+
 Hoeveel tijd heeft me dat gekost?
+de heledag
+
 Wat heb ik geleerd?
-Wat ga ik morgen doen?
+@function in css
 
 ### Week 3
 <details>
    <summary>week 3 voortgang</summary>
+   - Maak een glare voor het scherm zodat je kunt zien dat het glas is
+   - Box-shadow voor het scherm om het meer een geheel te maken
+   - Maak de buttons in dezelfde stijl van het scherm
+   - De titel moet nog af
+   - de animatie moet nog af
+   - architecture features moeten nuttig zijn
+   - responsiveness van de site
+   - het ziet er nu wel meer uit als één geheel
 </details>
 
-### dag 7
+### dag 7 
 #### 18.3.2026
+Wat heb ik vandaag gedaan?
+
+Hoeveel tijd heeft me dat gekost?
+
+Wat heb ik geleerd?
 
 
 ### Week 4
@@ -261,11 +278,16 @@ Wat ga ik morgen doen?
 ### ref
 CSS heeft zoveel. 
 
-[Gradient](https://developer.mozilla.org/en-US/play?uuid=80f6e3699c0e8b6c3b303a843d628ab813704dd3&state=VY1NDoMgGESv8mVWbYL9MV1R60nYoBChIhpA28R494aw6mqSl3kzO0yaHDgaZTfqnYzxJRDttDhdBamsdAJtc1V2a4UHQx8jOHJ5F57oY1UynOrHbfk%2BMzDaDiZxuteFHMJf%2FuaK18l%2BHMK8esWp8GrIqX06Ba0YdW7V5%2BKD4Z1PwZCMnnT%2Bl2HE8QM%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FGuides%2FImages%2FUsing_gradients%2F)
 [Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
 [Fun shapes with border-radius](https://9elements.github.io/fancy-border-radius/#61.39.31.24--.)
 [Inset](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/inset)
 [:has](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has)
 [last-of-type](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:last-of-type)
 [pixel-art refrence](https://itsfelpo.itch.io/frutiger-aero)
+[Play-pause functionality](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-play-state)
+[@function](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@function)
+[sibling-index](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-index)
+[hue-rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/hue-rotate)
+[scherm deco](https://github.com/dy/linefont)
+
 > Layouts don't have to be boring - Nils

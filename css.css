@@ -47,10 +47,31 @@ main {
 
 article {
 	position: relative;
+	margin-top: 10em;
 }
 
 h1 {
-  color: var(--white);
+	position: absolute;
+	top: 30px;
+	color: var(--white);
+}
+
+h1 > span {
+	/* display: block; */
+	font-size: 2em;
+	color: rgb(0, 255, 60);
+	animation: --sensational-type linear 20s infinite;
+	animation-delay: calc(1s * sibling-index());
+}
+
+@keyframes --sensational-type {
+	0%, 100% {
+		filter: hue-rotate(0turn);
+	}
+	50% {
+		filter: hue-rotate(3.142rad);
+		
+	}
 }
 
 h2 {
@@ -175,6 +196,18 @@ dl:not(dl dl) {
   	template-columns: repeat(auto-fill, 200px);
 	text-align: center;
 	align-items: center;
+	box-shadow: 0 0 5px #000000ae, 0 4px 5px #ffffff90;
+}
+
+dl:not(dl dl)::after {
+	content: "";
+	/* filter: brightness(10deg); */
+	background-color: var(--white);
+	width: 100px;
+	height: 120px;
+	opacity: 0.5;
+	transform: rotateZ(10deg);
+	position: absolute;
 }
 
 dd {
@@ -197,6 +230,27 @@ section dl dd:nth-child(1) > dl > dt {
 	font-size: 20px;
 }
 
+/* wave */
+
+/* section dl dd:nth-of-type(2) {
+	background-color: red;
+} */
+
+
+/* section dl dd:nth-child(2) > dl > dd {
+	background-color: red;
+	font-family: "Linefont", system-ui;
+	animation: wa 20s linear;
+} */
+/* @keyframes wa {
+	0% {
+		margin-left: 10px;
+	}
+	100% {
+		margin-left: 500px;
+	}
+} */
+
 /* globe */
 @function --rotate-globe(--deg, --amt, --i) {
   result: rotateY(calc((var(--deg) / var(--amt)) * var(--i) * 1deg));
@@ -218,28 +272,23 @@ section dl dd:nth-child(3) > dl > dd > dl > dd {
   	border: 1px solid white;
   	border-radius: 100px;
 
-	
+	&:nth-child(1) {
+		transform: --rotate-globe(360, 5, 0);
+	}
+	&:nth-child(2) {
+		transform: --rotate-globe(360, 5, 1);
+	}
+	&:nth-child(3) {
+		transform: --rotate-globe(360, 5, 2);
+	}
+	&:nth-child(4) {
+		transform: --rotate-globe(360, 5, 3);
+	}
+	&:nth-child(5) {
+		transform: --rotate-globe(360, 5, 4);
+	}
 }
 
-section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(1) {
-	transform: --rotate-globe(360, 5, 0);
-}
-
-section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(2) {
-	transform: --rotate-globe(360, 5, 1);
-}
-
-section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(3) {
-	transform: --rotate-globe(360, 5, 2);
-}
-
-section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(4) {
-	transform: --rotate-globe(360, 5, 3);
-}
-
-section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(5) {
-	transform: --rotate-globe(360, 5, 4);
-}
 
 /* last deco item screen */
 section dl dd:nth-child(4) > dl > dd {
@@ -306,7 +355,7 @@ aside
 	background: linear-gradient(180deg, var(--interface-color-start) 60%,  var(--interface-color-end) 100%);
 	width: 200px;
 	height: 75px;
-	border-radius: 0 0 30px 0;
+	border-radius: 0 0 30px 10px;
     form {
         display: flex;
         justify-content: center;
@@ -526,6 +575,7 @@ article > ul:nth-of-type(2) {
 /* charms */
 article > ul:nth-of-type(1) > li:last-child {
 	position: relative;
+	background-color: var(--black);
     top: 0;
 	right: 37px;
 	:first-child, :nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(6), :last-child {
@@ -554,7 +604,7 @@ article > ul:nth-of-type(1) > li:last-child {
         top: -33px;
 		border-radius: 50px;
 		background-color: var(--white);
-		height: 70px;
+		height: 80px;
         width: 30px;
 	}
 
@@ -635,6 +685,25 @@ article > ul:nth-of-type(2) > li:last-child > ul {
 }
 
 /* config */
+:root:has([value="pink"]:checked) {
+	--window:  #ff06ac;
+	--screen: #ff06ac;
+}
+
+:root:has([value="blue"]:checked) {
+	--window: rgb(0, 0, 255);
+	--screen: blue;
+
+	--outline-pxl: #005eff;
+	--outline-light-pxl: #0092f4;
+	--main-pxl: #0091ff;
+	--highlight-pxl: #2094fa;
+	--shadow-pxl: #1578cf;
+	--small-shadow-pxl: #1466ad;
+
+	--btn: #5699ff;
+	--light: #001aff;
+}
 
 
 /**************************/
@@ -667,19 +736,22 @@ body:has([value="3D"]:checked) ol > li {
     animation: --spin-3d 30s infinite;
 }
 
+/* play pause */
+body:has([value="play"]:checked) ol > li{
+   animation-play-state: running;
+}
+
+body:has([value="pause"]:checked) ol > li{
+   animation-play-state: paused;
+}
+
 /* checkbox */
 body:has([value="arrow-r"]:checked)
 {
 	background-image:
 		repeating-conic-gradient(
 			at
-				/* het horizontale midden berekenen */
-				/* de variabele (0 tot 1) maal 100% */
-				/* als de variabele nog niet bestaat dan wordt 0.5 gebruikt */
 				calc(var(--element-mouse-x, .5) * 100%) 
-				/* het verticale midden berekenen */
-				/* de variabele (0 tot 1) maal 100% */
-				/* als de variabele nog niet bestaat dan wordt 0.5 gebruikt */
 				calc(var(--element-mouse-y, .5) * 100%),
 			crimson 0%,
 			darkorange 5%,
@@ -690,11 +762,10 @@ body:has([value="arrow-r"]:checked)
 			crimson 20%
 		);
 }
-
-/* body:has([value="arrow-r"]:checked) label:nth-child(4) {
-	background: radial-gradient(at 53% 114%, rgb(255 241 176) 15px, rgb(255 158 0) 50%, rgb(255 60 0) 62%);
+/* 
+body:has([value="arrow-r"]:checked) label:nth-child(4) {
+	background: radial-gradient(circle at 0%, rgb(255 241 176) 15px, rgb(255 158 0) 25%, rgb(255 60 0) 100%);
 } */
-
 
 /* background */
 ol {
