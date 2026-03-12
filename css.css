@@ -198,6 +198,10 @@ section dl dd:nth-child(1) > dl > dt {
 }
 
 /* globe */
+@function --rotate-globe(--deg, --amt, --i) {
+  result: rotateY(calc((var(--deg) / var(--amt)) * var(--i) * 1deg));
+}
+
 section dl dd:nth-child(3) > dl > dd > dl {
 	display: grid;
 	place-items: center;
@@ -213,27 +217,28 @@ section dl dd:nth-child(3) > dl > dd > dl > dd {
   	aspect-ratio: 1;
   	border: 1px solid white;
   	border-radius: 100px;
+
+	
 }
 
 section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(1) {
-	 transform: rotateY(0);
+	transform: --rotate-globe(360, 5, 0);
 }
 
-
 section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(2) {
-	 transform: rotateY(72deg);
+	transform: --rotate-globe(360, 5, 1);
 }
 
 section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(3) {
-	 transform: rotateY(144deg);
+	transform: --rotate-globe(360, 5, 2);
 }
 
 section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(4) {
-	 transform: rotateY(216deg);
+	transform: --rotate-globe(360, 5, 3);
 }
 
 section dl dd:nth-child(3) > dl > dd > dl > dd:nth-child(5) {
-	 transform: rotateY(288deg);
+	transform: --rotate-globe(360, 5, 4);
 }
 
 /* last deco item screen */
@@ -629,6 +634,9 @@ article > ul:nth-of-type(2) > li:last-child > ul {
 	}
 }
 
+/* config */
+
+
 /**************************/
 /*    FUNctionality :D    */
 /*  user input on screen  */
@@ -662,7 +670,25 @@ body:has([value="3D"]:checked) ol > li {
 /* checkbox */
 body:has([value="arrow-r"]:checked)
 {
-	background-color: rgb(0, 213, 255);
+	background-image:
+		repeating-conic-gradient(
+			at
+				/* het horizontale midden berekenen */
+				/* de variabele (0 tot 1) maal 100% */
+				/* als de variabele nog niet bestaat dan wordt 0.5 gebruikt */
+				calc(var(--element-mouse-x, .5) * 100%) 
+				/* het verticale midden berekenen */
+				/* de variabele (0 tot 1) maal 100% */
+				/* als de variabele nog niet bestaat dan wordt 0.5 gebruikt */
+				calc(var(--element-mouse-y, .5) * 100%),
+			crimson 0%,
+			darkorange 5%,
+			gold 8%,
+			yellowgreen 12%,
+			dodgerblue 15%,
+			purple 18%,
+			crimson 20%
+		);
 }
 
 /* body:has([value="arrow-r"]:checked) label:nth-child(4) {
