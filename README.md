@@ -238,7 +238,7 @@ Hoeveel tijd heeft me dat gekost?
 de heledag
 
 Wat heb ik geleerd?
-@function in css
+@function en @container in css
 
 ### Week 3
 <details>

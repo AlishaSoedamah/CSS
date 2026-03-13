@@ -1,0 +1,87 @@
+/**************************/
+/*    FUNctionality :D    */
+/*  user input on screen  */
+/**************************/
+
+body:has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content:"3D";
+}
+
+body:has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content:"2D";
+}
+
+body:has([value="arrow-r"]:checked):has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content:"2D + ???";
+}
+
+body:has([value="arrow-r"]:checked):has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content:"3D + ???";
+}
+
+/* animation toggle */
+body:has([value="2D"]:checked) ol > li {
+   animation: --spin  20s infinite;
+}
+
+body:has([value="3D"]:checked) ol > li {
+    animation: --spin-3d 30s infinite;
+}
+
+/* play/pause */
+body:has([value="play"]:checked) {
+	--playstate-flag: play;
+	ol > li{
+		animation-play-state: running;
+	}
+}
+
+body:has([value="pause"]:checked) {
+	--playstate-flag: paused;
+	ol > li {
+		 animation-play-state: paused;
+	 }
+}
+
+/* experimental toggle */
+@container style(--playstate-flag: play)
+{	
+	fieldset > label:nth-child(2) {
+		background: radial-gradient(circle at 50% 90%, var(--clr-one-hover) 1px, var(--clr-two-hover), var(--clr-three-hover) 62%);
+	}
+
+	fieldset label:nth-child(3) {
+		background-color: var(--btn);
+		background: radial-gradient(circle at 50% 90%, var(--clr-one) 1px, var(--clr-two) 41%, var(--clr-three) 62%);
+	}
+}
+
+@container style(--playstate-flag: paused)
+{
+	fieldset label:nth-child(2) {
+		background-color: var(--btn);
+		background: radial-gradient(circle at 50% 90%, var(--clr-one) 1px, var(--clr-two) 41%, var(--clr-three) 62%);
+	}
+
+	fieldset label:nth-child(3) {
+		background: radial-gradient(circle at 50% 90%, var(--clr-one-hover) 1px, var(--clr-two-hover), var(--clr-three-hover) 62%);
+	}
+}
+
+@container style(--theme: normal) {
+	ol li {
+    	border: 1px solid green;
+	}
+}
+
+@container style(--theme: red) {
+	ol li {
+		border: 1px solid red;
+	}
+}
+
+@container style(--theme: blue) {
+    ol li {
+    	border: 1px solid blue;
+   }
+}
