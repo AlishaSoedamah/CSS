@@ -17,19 +17,15 @@
   }
 }
 
-@keyframes --spin {
+@keyframes --move-wave {
 	0%, 100% {
-		transform: rotate(0deg);
-		/* scale: 0.5; */
-		border-radius: 20px;
+		margin-left: -200px;
 	}
-
 	50% {
-		transform: rotate(260deg);
-		/* scale: 1; */
-		border-radius: 0px;
+		margin-left: 0px;
 	}
 }
+
 
 @keyframes --spin-3d {
 	0%, 100% {
@@ -44,5 +40,19 @@
 			rotateY(1turn)
 			rotateX(360deg)
 			translateZ( calc(var(--size) * 1.4));
+	}
+}
+
+@keyframes --spin {
+	0%, 100% {
+		scale: 0.3;
+		transform: rotate(0deg);
+		filter: hue-rotate(0turn);
+	}
+
+	50% {
+		scale: 1;
+		transform: rotate(1turn);
+		filter: hue-rotate(3.1rad);
 	}
 }

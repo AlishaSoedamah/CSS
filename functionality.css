@@ -3,20 +3,48 @@
 /*  user input on screen  */
 /**************************/
 
+/* display input on screen */
 body:has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
-  content:"3D";
+  content: "3D";
 }
 
 body:has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
-  content:"2D";
+  content: "2D";
 }
 
-body:has([value="arrow-r"]:checked):has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
-  content:"2D + ???";
+body:has([value="arrow-r"]:checked):has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > p::after {
+  content: "???";
 }
 
-body:has([value="arrow-r"]:checked):has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
-  content:"3D + ???";
+body:has([value="arrow-r"]:checked):has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > p::after {
+  content: "???";
+}
+
+body:has([value="play"]:checked) section dl > dd:nth-child(1) > dl > dt::after {
+	content: "play";
+}
+
+body:has([value="pause"]:checked) section dl > dd:nth-child(1) > dl > dt::after {
+	content: "pause";
+}
+
+/* show which input was selected mini */
+body:has([value="arrow-r"]:checked) section dl > dd:nth-child(4) > dl > dd:nth-child(1) {
+  content:"";
+  color: var(--screen);
+  background-color: var(--white);
+}
+
+body:has([value="2D"]:checked) section dl > dd:nth-child(4) > dl > dd:nth-child(2) {
+	content:"";
+	color: var(--screen);
+	background-color: var(--white);
+}
+
+body:has([value="3D"]:checked) section dl > dd:nth-child(4) > dl > dd:nth-child(3) {
+	content:"";
+	color: var(--screen);
+	background-color: var(--white);
 }
 
 /* animation toggle */
@@ -31,7 +59,7 @@ body:has([value="3D"]:checked) ol > li {
 /* play/pause */
 body:has([value="play"]:checked) {
 	--playstate-flag: play;
-	ol > li{
+	ol > li {
 		animation-play-state: running;
 	}
 }
@@ -43,7 +71,12 @@ body:has([value="pause"]:checked) {
 	 }
 }
 
-/* experimental toggle */
+input:checked label{
+ 	background-color: var(--btn);
+	background: radial-gradient(circle at 50% 90%, var(--clr-one) 1px, var(--clr-two) 41%, var(--clr-three) 62%);
+}
+
+/* pressed */
 @container style(--playstate-flag: play)
 {	
 	fieldset > label:nth-child(2) {
@@ -70,18 +103,18 @@ body:has([value="pause"]:checked) {
 
 @container style(--theme: normal) {
 	ol li {
-    	border: 1px solid green;
+    	border: 4px solid green;
 	}
 }
 
 @container style(--theme: red) {
 	ol li {
-		border: 1px solid red;
+		border: 4px solid red;
 	}
 }
 
 @container style(--theme: blue) {
     ol li {
-    	border: 1px solid blue;
+    	border: 4px solid blue;
    }
 }
