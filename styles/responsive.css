@@ -1,0 +1,16 @@
+/**************************/
+/*       Reponsive        */
+/*    All mediaqueries    */
+/**************************/
+
+/* all screens 640px and below need some love */
+@media (max-width: 640px) {
+	section {
+		width: 450px;
+	}
+
+	aside {
+		width: 170px;
+    	height: 70px;
+	}	
+}

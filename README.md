@@ -1,6 +1,14 @@
 # CSS to the rescue
 CSS - mwdd
-Pure CSS control pannel!
+Pure CSS control panel!
+
+   css structure:
+   ├── styles/main.css              geeft alles op de pagina een stijl
+   ├── styles/functionality.css     :has @container, laat user input zien en laat zien welke knop is ingedrukt
+   ├── styles/animations.css        @keyframes, alle animaties
+   ├── styles/pixelart.css          kleine deco bovenaan de panel
+   ├── styles/responsive.css        @mediaqueries
+   └── styles/themes.css            color vars voor alles
 
 ### dag 1 
 #### 18.2.2026
@@ -34,7 +42,7 @@ CSS + BT voortgang bespreken, bespreken wat ik ga doen voor de eindopdracht van 
 ### Week 1
 <details open>
    <summary>Mijn eerste idee</summary>
-   Fruiger aero pannel die een trippy achtergrond bestuurd. Ik wil een 2d/3d toggle button tussen states maken.
+   Fruiger aero panel die een trippy achtergrond bestuurd. Ik wil een 2d/3d toggle button tussen states maken.
 
    Inspo voor de buttons van de interface:
    <img src="readme/btn.png">
@@ -202,7 +210,7 @@ de beste gradients maak je met oklsh()
 [SVG convert](https://yoksel.github.io/url-encoder/)
 [Video die ik heb gebruikt](https://www.youtube.com/watch?v=1bYAwpPPD6U)
 
-Ik heb besloten om de interface te veranderen omdat er simpelweg nieg genoeg plek was voor de buttons in mijn oude pannel.
+Ik heb besloten om de interface te veranderen omdat er simpelweg nieg genoeg plek was voor de buttons in mijn oude panel.
 Hier passen maar 4 buttons in en de vorm van de interface vond ik te lastig en niet meer mooi:
 <img src="readme/veryold.png">
 

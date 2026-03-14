@@ -1,0 +1,82 @@
+/**************************/
+/*        Themes          */
+/*     Colors & hovers    */
+/**************************/
+
+:root {
+	--white: rgb(255, 255, 255);
+	--black: rgb(25, 25, 25);
+
+	/* pixel art */
+	--outline-pxl: #016063;
+	--outline-light-pxl: #068A90;
+	--main-pxl: #00E2BA;
+	--highlight-pxl: #20FAE4;
+	--shadow-pxl: #11AB9F;
+	--small-shadow-pxl: #038B8D;
+
+	/* charms */
+	--fish: #FF3E48;
+
+  /* control pannel */
+	--grey: rgb(208, 208, 208);
+  	--light-grey: rgb(227, 227, 227);
+  	--screen: #109394;
+  	--window: #065F62;
+	--btn: #78E2E6;
+    --interface-color-start: #B6C4CD; 
+    --interface-color-end: #808b92; 
+	--light: #86fbff;
+	--glow: #0ff;
+
+	/* glass btns */
+	--clr-one: rgb(141, 248, 219);
+	--clr-two: rgb(0, 255, 183);
+	--clr-three:  rgb(0, 177, 121);
+
+	/* btn hover */
+	--clr-one-hover: rgb(104, 255, 215) ;
+	--clr-two-hover: rgb(0, 184, 132);
+	--clr-three-hover: rgb(0, 116, 79);
+
+	/* theme clr change based on config */
+	--theme: normal;
+	--animation-clr: rgb(0, 208, 0);
+
+	/* play state */
+	--playstate-flag: play;
+}
+
+
+/* config */
+body:has(input[value="pink"]:checked) {
+	--theme: red;
+	--window:  #ff06ac;
+	--screen: #ff06ac;
+
+	--clr-one: rgb(248, 141, 236);
+	--clr-two: rgb(255, 0, 166);
+	--clr-three:  rgb(177, 0, 62); 
+
+}
+
+body:has(input[value="blue"]:checked) {
+	--theme: blue;
+	--window: rgb(0, 0, 255);
+	--screen: blue;
+
+	--outline-pxl: #005eff;
+	--outline-light-pxl: #0092f4;
+	--main-pxl: #0091ff;
+	--highlight-pxl: #2094fa;
+	--shadow-pxl: #1578cf;
+	--small-shadow-pxl: #1466ad;
+
+	--btn: #5699ff;
+	--light: #001aff;
+	--glow: blue;
+
+	--clr-one: rgb(81, 212, 255);
+	--clr-two: rgb(33, 141, 255);
+	--clr-three: rgb(0, 102, 255); 
+}
