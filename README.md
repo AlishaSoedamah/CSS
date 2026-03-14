@@ -1,15 +1,16 @@
 # CSS to the rescue
 CSS - mwdd
 Pure CSS control panel!
+```
+   CSS structure:
 
-   css structure:
    ├── styles/main.css              geeft alles op de pagina een stijl
    ├── styles/functionality.css     :has @container, laat user input zien en laat zien welke knop is ingedrukt
    ├── styles/animations.css        @keyframes, alle animaties
    ├── styles/pixelart.css          kleine deco bovenaan de panel
    ├── styles/responsive.css        @mediaqueries
    └── styles/themes.css            color vars voor alles
-
+```
 ### dag 1 
 #### 18.2.2026
 Carousel gemaakt met Romy, Thije en Braham, er was geen checkout vandaag!
