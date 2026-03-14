@@ -257,7 +257,6 @@ section > dl > dd:nth-child(2)
 section dl dd:nth-child(2) > dl > div >  dd {
 	font-family: "Linefont", system-ui;
 	animation: --move-wave 15s linear infinite;
-	font-weight: 200;
 }
 
 div {
