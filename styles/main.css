@@ -122,7 +122,6 @@ header {
 
 /* SCREEN */
 dl:not(dl dl) {
-	list-style: none;
 	width: 350px;
     height: 120px;
 	background-color: var(--screen);

@@ -4,6 +4,10 @@
 /**************************/
 
 @media (max-width: 640px) {
+	h1 {
+    	font-size: 25px;
+	}
+
 	header {
 		width: 400px;
 	}
@@ -62,32 +66,80 @@
 		left: 317px;
 	}
 
+	details[open] {
+    	height: 160px;
+	}
 }
 
 
 @media (max-width: 475px) {
+	h1 {
+    	font-size: 20px;
+	}
+
 	header {
-        width: 290px;
+        width: 310px;
+		bottom: 165px;
     }
 
 	section {
-        width: 340px;
+		height: 165px;
+        width: 360px;
+		form:nth-child(2) {
+			gap: 7px;
+		}
+	}
+
+	section > section {
+		grid-template-columns: 60% 42%;
 	}
 
 	dl:not(dl dl) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
 		width: 185px;
+		height: 115px;
 	}
+
+	 dl:not(dl dl):after {
+        width: 180px;
+    }
 
 	section dl dd:nth-child(3) > dl {
 		display: none;
 	}
 
 	article > ul:nth-of-type(1) {
-		left: 0;
+		left: 216px;
 	}
 
 	article > ul:nth-of-type(2) {
-        left: -33px;
-    }
+        left: 238px;
+		bottom: 130px;
+	}
  
+	aside {
+		top: 160px;
+		height: 62px;
+		width: 150px;
+        border-radius: 0 0 10px 10px;
+	}
+
+	aside label {
+    	width: 45px;
+	}
+
+	section dl dd:nth-child(4) > dl > dd:nth-child(5) {
+		display: none;
+	}
+
+	main > article > span {
+    	bottom: 490px;
+	}
+
+	form:nth-child(2) label:nth-child(1) {
+    	padding: 0px;
+	}
 }
