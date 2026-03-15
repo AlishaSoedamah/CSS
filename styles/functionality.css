@@ -71,10 +71,16 @@ body:has([value="pause"]:checked) {
 	 }
 }
 
-input:checked label{
- 	background-color: var(--btn);
-	background: radial-gradient(circle at 50% 90%, var(--clr-one) 1px, var(--clr-two) 41%, var(--clr-three) 62%);
+/* body:has([value="arrow-r"]:checked) label:nth-child(1) {
+	background-color: var(--btn);
+	background: radial-gradient(circle at 50% 90%, var(--clr-one-hover) 1px, var(--clr-two-hover) 41%, var(--clr-three-hover) 62%);
 }
+
+body:has([value="2D"]:checked) label:nth-child(2) {
+	background-color: var(--btn);
+	background: radial-gradient(circle at 50% 90%, var(--clr-one-hover) 1px, var(--clr-two-hover) 41%, var(--clr-three-hover) 62%);
+} */
+
 
 /* pressed */
 @container style(--playstate-flag: play)

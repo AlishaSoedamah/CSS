@@ -3,14 +3,91 @@
 /*    All mediaqueries    */
 /**************************/
 
-/* all screens 640px and below need some love */
 @media (max-width: 640px) {
+	header {
+		width: 400px;
+	}
+
+	details {
+		width: 93px;
+		right: 50px;
+		height: 32px;
+	}
+
+	details > summary {
+		font-size: 15px;
+	}
 	section {
 		width: 450px;
+		border-radius: 0 100px 100px 10px;
+	}
+
+	dl:not(dl dl) {
+		width: 260px;
+	}
+
+	dl:not(dl dl):after {
+		width: 255px;
+	}
+
+	section > dl > dd:nth-child(2) {
+		display: none;
 	}
 
 	aside {
+		left: 24%;
 		width: 170px;
     	height: 70px;
-	}	
+		border-radius: 0 0 30px 30px;
+	}
+
+	form:nth-child(2) label:nth-child(4) {
+		width: 50px;
+		> div {
+			width: 7px;
+        	height: 7px;
+		}
+	}
+
+	fieldset {
+		width: 100px;
+		padding: 6px;
+		label {
+			width: 37px;
+			height: 23px;
+		}
+	}
+
+	article > ul:nth-of-type(2) {
+		left: 317px;
+	}
+
+}
+
+
+@media (max-width: 475px) {
+	header {
+        width: 290px;
+    }
+
+	section {
+        width: 340px;
+	}
+
+	dl:not(dl dl) {
+		width: 185px;
+	}
+
+	section dl dd:nth-child(3) > dl {
+		display: none;
+	}
+
+	article > ul:nth-of-type(1) {
+		left: 0;
+	}
+
+	article > ul:nth-of-type(2) {
+        left: -33px;
+    }
+ 
 }

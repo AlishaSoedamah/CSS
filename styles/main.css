@@ -15,6 +15,8 @@ main {
 	justify-content: center;
 	place-items: center;
 	height: 100vh;
+
+	/* noise filter */
 }
 
 article {
@@ -85,7 +87,7 @@ label {
 	width: 50px;
 	height: 25px;
 	position: relative;
-	border: 1px solid rgb(0, 110, 83);
+	border: 1px solid var(--btn-outline);
 	&:hover {
 		cursor: pointer;
 	}
@@ -114,7 +116,7 @@ header {
 	color: var(--white);
 	height: 45px;
 	width: 515px;
-	border-radius: 20px 0 0 0;
+	border-radius: 20px 10px 0 0;
 	background-color: var(--window);
 }
 
@@ -573,15 +575,9 @@ body:has([value="arrow-r"]:checked) label:nth-child(4) {
 /* background */
 ol {
 	display: grid;
-/* 	justify-content: center; */
-    /* align-items: center; */
-/*     justify-items: center; */
-position: absolute;
+	position: absolute;
 	z-index: -2;
-  list-style: none; 
-	/* transform-style: preserve-3d; */
-	/* perspective: 10em; */
-	/* animation: --spin 20s ease infinite; */
+  	list-style: none; 
 }
 
 ol  > li {
@@ -605,26 +601,23 @@ details {
 	width: 125px;
 	height: 35px;
 	border-radius: 0 0 20px 20px;
-}
-
-details > details {
-	position: revert;
-	color: var(--black);
-	background-color: var(--grey);
-	text-align: left;
+	> details {
+		position: revert;
+		color: var(--black);
+		background-color: var(--grey);
+		text-align: left;
+	}
 }
 
 details > summary {
 	list-style: none;
-}
-
-summary::-webkit-details-marker {
+	&::-webkit-details-marker {
 	display: none
-}
-
-summary::after {
-	content: '▼';
-	margin-left: 10px;
+	}
+	&::after {
+		content: '▼';
+		margin-left: 10px;
+	}
 }
 
 details[open] {
