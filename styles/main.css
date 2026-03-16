@@ -15,7 +15,7 @@ main {
 	justify-content: center;
 	place-items: center;
 	height: 100vh;
-
+ 
 	/* noise filter */
 }
 
@@ -73,6 +73,7 @@ fieldset {
     border-radius: 25px;
     width: 140px;
     box-shadow: 0 0 5px #00000078, 0 4px 5px #ffffff87;
+	color: var(--btn-txt);
     legend {
         display: none;
     }
@@ -267,6 +268,7 @@ form:nth-child(2) label:nth-child(4) {
 	border-radius: 50px;
 	width: 70px;
 	aspect-ratio: 1;
+	animation: --knob 10s infinite;
 	box-shadow: 0 0 5px #000000ae, 0 4px 5px #ffffff90;
 	input[type="range"] {
 	    position: absolute;
@@ -283,6 +285,15 @@ form:nth-child(2) label:nth-child(4) {
 		background: var(--btn);
 		cursor: pointer;
    }
+}
+
+@keyframes --knob {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 /* two bottom buttons */
@@ -303,14 +314,15 @@ aside
 
 form:nth-child(2) label:nth-child(1) {
     background-color: var(--btn);
-	background:  radial-gradient(circle at 45% 90%, var(--clr-one) 10px, var(--clr-two) 41%, var(--clr-three) 62%);
+	background:  radial-gradient(circle at 50% 115%, var(--clr-one) 10px, var(--clr-two) 41%, var(--clr-three) 62%);
 	padding: 5px;
 	width: 45px;
 	text-align: center;
 	border-radius: 40px;
 	box-shadow: 0 0 5px #0000007c, 0 4px 5px #ffffff87;
 	position: relative;
-	border: 2px solid rgb(0, 110, 83);
+	border: 1px solid var(--btn-outline);
+	color: var(--btn-txt);
 	&:hover {
 		cursor: pointer;
 	}
@@ -353,13 +365,14 @@ mark::after {
 
 mark:nth-child(3)::after
 { 
-	margin-left: 42px;
+	margin-left: 41.5px;
 }
 
 aside label {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
+	color: var(--btn-txt);
 
 	margin: 0 10px;
 	padding: 10px;
@@ -373,12 +386,12 @@ aside label {
 
 	position: relative;
 	border-radius: 55px;
-	border: 2px solid rgb(0, 110, 83);
-	background: radial-gradient(circle at 45% 90%, var(--clr-one) 10px, var(--clr-two) 41%, var(--clr-three) 62%);
+	border: 2px solid var(--btn-outline);
+	background: radial-gradient(circle at 50% 90%, var(--clr-one) 10px, var(--clr-two) 41%, var(--clr-three) 62%);
 	box-shadow: 0 0 5px #000000, 0 4px 5px #ffffff;
 	&:hover {
 		cursor: pointer;
-		background: radial-gradient(circle at 45% 90%, var(--clr-one-hover) 10px, var(--clr-two-hover), var(--clr-three-hover) 62%);
+		background: radial-gradient(circle at 50% 90%, var(--clr-one-hover) 10px, var(--clr-two-hover), var(--clr-three-hover) 62%);
 
 	}
     input {

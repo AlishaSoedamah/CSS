@@ -30,6 +30,7 @@
 	--glow: #0ff;
 
 	/* glass btns */
+	--btn-txt: black;
 	--btn-outline: rgb(0, 110, 83);
 	--clr-one: rgb(141, 248, 219);
 	--clr-two: rgb(0, 255, 183);
@@ -59,24 +60,24 @@ body:has(input[value="red"]:checked) {
     --interface-color-start: #D6BFBF; 
     --interface-color-end: #9B8888; 
 
-	--outline-pxl: #005eff;
-	--outline-light-pxl: #0092f4;
-	--main-pxl: #0091ff;
-	--highlight-pxl: #2094fa;
-	--shadow-pxl: #1578cf;
-	--small-shadow-pxl: #1466ad;
+	--outline-pxl: #710000;
+    --outline-light-pxl: #9b0000;
+    --main-pxl: #ff6000;
+    --highlight-pxl: #fa2020;
+    --shadow-pxl: #cf0000;
+    --small-shadow-pxl: #ab0c0c;
 
-	--btn: #5699ff;
-	--light: #ff0000;
+	--btn: #ff5656;
+	--light: #ff5656;
 	--glow: rgb(255, 60, 0);
-
+	--btn-txt: white;
 	--btn-outline: rgb(110, 0, 0);
 	--clr-one: #ff7e38;
 	--clr-two: #ff5500;
 	--clr-three: #953731;
-	--clr-one-hover: rgb(17, 0, 255) ;
-	--clr-two-hover: rgb(0, 3, 184);
-	--clr-three-hover: rgb(13, 0, 46);
+	--clr-one-hover:  rgb(242 101 24);
+	--clr-two-hover:  rgb(188 63 8);
+	--clr-three-hover: rgb(122 31 25);
 }
 
 body:has(input[value="blue"]:checked) {
@@ -86,19 +87,20 @@ body:has(input[value="blue"]:checked) {
 
 	--outline-pxl: #005eff;
 	--outline-light-pxl: #0092f4;
-	--main-pxl: #0091ff;
+	--main-pxl: #03ace5;
 	--highlight-pxl: #2094fa;
-	--shadow-pxl: #1578cf;
+	--shadow-pxl: #1781de;
 	--small-shadow-pxl: #1466ad;
 
+	--btn-outline: rgb(0, 7, 150);
 	--btn: #5699ff;
-	--light: #001aff;
-	--glow: blue;
-
+	--light: #00bfff;
+	--glow: rgb(0, 208, 255);
+	--btn-txt: white;
 	--clr-one: rgb(81, 212, 255);
 	--clr-two: rgb(33, 141, 255);
 	--clr-three: rgb(0, 102, 255); 
-	--clr-one-hover: rgb(17, 0, 255) ;
-	--clr-two-hover: rgb(0, 3, 184);
-	--clr-three-hover: rgb(13, 0, 46);
+	--clr-one-hover: rgb(0 176 255);
+    --clr-two-hover: rgb(8 114 255);
+    --clr-three-hover: rgb(0 47 189);
 }

@@ -12,10 +12,7 @@ body:has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
   content: "2D";
 }
 
-body:has([value="quirk"]:checked):has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > p::after {
-  content: "???";
-}
-
+body:has([value="quirk"]:checked):has([value="2D"]:checked) section dl > dd:nth-child(1) > dl > p::after,
 body:has([value="quirk"]:checked):has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > p::after {
   content: "???";
 }
@@ -59,16 +56,27 @@ body:has([value="3D"]:checked) ol > li {
 /* play/pause */
 body:has([value="play"]:checked) {
 	--playstate-flag: play;
-	ol > li {
+	ol > li,
+	section dl dd:nth-child(3) > dl > dd > dl,
+	section dl dd:nth-child(2) > dl > div > dd,
+	form:nth-child(2) label:nth-child(4) {
 		animation-play-state: running;
 	}
 }
 
 body:has([value="pause"]:checked) {
 	--playstate-flag: paused;
-	ol > li {
+	ol > li,
+	section dl dd:nth-child(3) > dl > dd > dl,
+	section dl dd:nth-child(2) > dl > div > dd,
+	form:nth-child(2) label:nth-child(4) {
 		 animation-play-state: paused;
 	 }
+}
+
+/* filters */
+body:has([value="eye-comfort"]:checked) main {
+	filter: sepia(40%);
 }
 
 /* pressed */
