@@ -15,8 +15,18 @@ main {
 	justify-content: center;
 	place-items: center;
 	height: 100vh;
- 
-	/* noise filter */
+}
+
+main::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	width: 100vw;
+	height: 100vh;
+	mix-blend-mode: color-burn;
+	opacity: 30%;
+	/* filter: url(#noiseFilter) contrast(134%); */
 }
 
 article {
@@ -581,12 +591,6 @@ body:has([value="quirk"]:checked)
 	/* animation: --spin 20s ease infinite; */
 
 }
-
-
-/* 
-body:has([value="arrow-r"]:checked) label:nth-child(4) {
-	background: radial-gradient(circle at 0%, rgb(255 241 176) 15px, rgb(255 158 0) 25%, rgb(255 60 0) 100%);
-} */
 
 /* background */
 ol {
