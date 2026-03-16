@@ -179,6 +179,7 @@ section > dl > dd:nth-child(2)
 
 section dl dd:nth-child(2) > dl > div >  dd {
 	font-family: "Linefont", system-ui;
+	font-weight: 200;
 	animation: --move-wave 15s linear infinite;
 }
 
@@ -549,7 +550,7 @@ article > ul:nth-of-type(2) > li:last-child > ul {
 }
 
 /* checkbox */
-body:has([value="arrow-r"]:checked)
+body:has([value="quirk"]:checked)
 {
 	background-image:
 		repeating-conic-gradient(
@@ -564,7 +565,10 @@ body:has([value="arrow-r"]:checked)
 			purple 18%,
 			crimson 20%
 		);
+	/* animation: --spin 20s ease infinite; */
+
 }
+
 
 /* 
 body:has([value="arrow-r"]:checked) label:nth-child(4) {
