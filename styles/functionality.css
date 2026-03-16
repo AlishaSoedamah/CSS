@@ -46,11 +46,13 @@ body:has([value="3D"]:checked) section dl > dd:nth-child(4) > dl > dd:nth-child(
 
 /* animation toggle */
 body:has([value="2D"]:checked) ol > li {
-   animation: --spin  20s infinite;
+	animation: --spin 20s ease infinite;
+	animation-delay: calc(90ms * sibling-index());
 }
 
 body:has([value="3D"]:checked) ol > li {
-    animation: --spin-3d 30s infinite;
+	animation-delay: calc(90ms * sibling-index());
+    animation: --spin-3d 20s infinite;
 }
 
 /* play/pause */
@@ -78,6 +80,19 @@ body:has([value="pause"]:checked) {
 body:has([value="eye-comfort"]:checked) main {
 	filter: sepia(40%);
 }
+
+/* body:has([value="noise"]:checked) main::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	width: 100vw;
+	height: 100vh;
+	mix-blend-mode: color-burn;
+	opacity: 30%;
+	filter: url(#noiseFilter) contrast(134%);
+	animation: bg-animation 2s infinite;
+} */
 
 /* pressed */
 body:has([value="quirk"]:checked) form:nth-child(2) label:nth-child(1) {

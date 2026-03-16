@@ -17,17 +17,14 @@ main {
 	height: 100vh;
 }
 
-main::before {
-	position: absolute;
-	left: 0;
-	top: 0;
-	content: "";
-	width: 100vw;
-	height: 100vh;
-	mix-blend-mode: color-burn;
-	opacity: 30%;
-	/* filter: url(#noiseFilter) contrast(134%); */
-}
+
+
+/* @keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    25% { transform: translate(-5%,-5%) }
+    75% { transform: translate(-10%,5%) }
+    100% { transform: translate(5%,-10%) }
+} */
 
 article {
 	position: relative;
@@ -295,15 +292,6 @@ form:nth-child(2) label:nth-child(4) {
 		background: var(--btn);
 		cursor: pointer;
    }
-}
-
-@keyframes --knob {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
 }
 
 /* two bottom buttons */
@@ -593,7 +581,7 @@ body:has([value="quirk"]:checked)
 }
 
 /* background */
-ol {
+/* ol {
 	display: grid;
 	position: absolute;
 	z-index: -2;
@@ -603,13 +591,14 @@ ol {
 ol  > li {
 	animation: --spin 20s ease infinite;
 	grid-area: 1/1;
-	width: calc(100px * sibling-index());
+	width: calc(50px * sibling-index());
  	border: 4px solid white;
 	aspect-ratio: 1;
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
 	animation-delay: calc(50ms * sibling-index());
-}
+} */
+
 
 details {
 	z-index: 1;
@@ -644,4 +633,19 @@ details[open] {
 	color: var(--black);
 	background-color: rgb(203, 203, 203);
 	height: 125px;
+}
+
+
+ol {
+	display: grid;
+	position: absolute;
+	z-index: -2;
+	list-style: none; 
+}
+
+ol > li {
+	grid-area: 1/1;
+	width: calc(60px * sibling-index());
+	border: 2px solid white;
+	aspect-ratio: 1;
 }
