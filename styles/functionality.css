@@ -44,6 +44,17 @@ body:has([value="3D"]:checked) section dl > dd:nth-child(4) > dl > dd:nth-child(
 	background-color: var(--white);
 }
 
+body:has([value="white"]:checked)
+{
+	background-color: whitesmoke;
+}
+
+body:has([value="black"]:checked)
+{
+	background-color: var(--black);
+}
+
+
 /* animation toggle */
 body:has([value="2D"]:checked) ol > li {
 	animation: --spin 20s ease infinite;

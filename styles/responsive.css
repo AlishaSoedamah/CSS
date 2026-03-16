@@ -24,15 +24,21 @@
 
 	section {
 		width: 450px;
-		border-radius: 0 100px 100px 10px;
+		border-radius: 0 100px 100px 50px;
 	}
 
 	dl:not(dl dl) {
 		width: 260px;
+		margin: 0px 0 0px 23px;
+		border-radius: 15px 15px 15px 30px;
 	}
 
 	dl:not(dl dl):after {
 		width: 255px;
+	}
+
+	article > ul:nth-of-type(1) {
+    	left: 268px;
 	}
 
 	section > dl > dd:nth-child(2) {
@@ -86,6 +92,7 @@
 	section {
 		height: 165px;
         width: 360px;
+		border-radius: 0 100px 100px 45px;
 		form:nth-child(2) {
 			gap: 7px;
 		}
@@ -102,6 +109,8 @@
 		gap: 20px;
 		width: 185px;
 		height: 115px;
+		margin: 0 15px;
+		border-radius: 15px;
 	}
 
 	 dl:not(dl dl):after {

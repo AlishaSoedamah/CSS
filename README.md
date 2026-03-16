@@ -159,7 +159,7 @@ Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond 
    <summary>week 2 voortgang</summary>
    Notes van Sanne: 
    
-   - Moet nog iets met typografie doen dat past bij de website
+   - Moet nog iets met typografie doen dat past bij de website (denk iets met een video tijdlijn)
    - New css architecture features: @layer, container queries, style queries, @functions, if()
    - sibling-index voor de 3d animatie
 
@@ -181,6 +181,11 @@ Voortgang bespreken van dit vak en BT. Kijken wat er nodig is om de achtergrond 
 
    Meer blokjes in de lijst en van 4s naar 2s
    ![animatie 2](readme/anim2.gif)
+
+   ![animatie 3](readme/anim3.gif)
+   ![animatie 4](readme/anim4.gif)
+   ![animatie 5](readme/anim5.gif)
+   ![animatie 6](readme/anim6.gif)
 </details>
 
 ### dag 5
@@ -252,7 +257,11 @@ Wat heb ik geleerd?
 ### Week 3
 <details>
    <summary>week 3 voortgang</summary>
+
+   feedback die ik nog ga verwerken:
+
    - Maak een glare voor het scherm zodat je kunt zien dat het glas is
+   - Meer border-radius voor de rand zodat het matched met de rest van het ontwerp
    - Box-shadow voor het scherm om het meer een geheel te maken
    - Maak de buttons in dezelfde stijl van het scherm
    - De titel moet nog af
@@ -262,7 +271,7 @@ Wat heb ik geleerd?
    - het ziet er nu wel meer uit als één geheel
 </details>
 
-### dag 7 
+### dag 7 laatste dag!
 #### 18.3.2026
 Wat heb ik vandaag gedaan?
 
@@ -298,5 +307,7 @@ CSS heeft zoveel.
 [sibling-index](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-index)
 [hue-rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/hue-rotate)
 [scherm deco](https://github.com/dy/linefont)
-
+[corner-shape](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/corner-shape)
+[corner-shape example](https://css-tricks.com/almanac/properties/c/corner-shape/)
+[paint-order](https://codepen.io/web-dot-dev/pen/dyxryKE)
 > Layouts don't have to be boring - Nils
