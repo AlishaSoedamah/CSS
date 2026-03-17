@@ -310,4 +310,7 @@ CSS heeft zoveel.
 [corner-shape](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/corner-shape)
 [corner-shape example](https://css-tricks.com/almanac/properties/c/corner-shape/)
 [paint-order](https://codepen.io/web-dot-dev/pen/dyxryKE)
+
+[animation ??? inspo](https://www.miriamsuzanne.com/2022/10/21/the-conic/)
+
 > Layouts don't have to be boring - Nils

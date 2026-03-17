@@ -54,6 +54,59 @@ body:has([value="black"]:checked)
 	background-color: var(--black);
 }
 
+/* quirk mode */
+body:has([value="quirk"]:checked)
+{
+	  background: 
+		radial-gradient(circle, var(--trans)),
+		conic-gradient(from 180deg, var(--trans-wrap)),
+		radial-gradient(circle, var(--trans)),
+		conic-gradient(var(--solid-wrap));
+	background-blend-mode: overlay;
+	height: 100%;
+	/* animation: --spin 20s ease infinite; */
+
+}
+
+html {
+  --c1: red;
+  --c2: orange;
+  --c3: yellow;
+  --c4: green;
+  --c5: blue;
+  --c6: indigo;
+  --c7: violet;
+  
+  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
+  --solid-wrap: var(--solid), var(--c1);
+  --trans: 
+    var(--c1), transparent,
+    var(--c2), transparent,
+    var(--c3), transparent,
+    var(--c4), transparent,
+    var(--c5), transparent,
+    var(--c6), transparent,
+    var(--c7)
+  ;
+  --trans-wrap: var(--trans), transparent, var(--c1);
+  
+}
+
+
+  /* html {
+    --diff: calc(360deg / 7);
+    --c1: oklch(60% 0.5 calc(var(--diff) * 1));
+    --c2: oklch(60% 0.5 calc(var(--diff) * 2));
+    --c3: oklch(60% 0.5 calc(var(--diff) * 3));
+    --c4: oklch(60% 0.5 calc(var(--diff) * 4));
+    --c5: oklch(60% 0.5 calc(var(--diff) * 5));
+    --c6: oklch(60% 0.5 calc(var(--diff) * 6));
+    --c7: oklch(60% 0.5 calc(var(--diff) * 7));
+    
+    background-blend-mode: overlay, overlay, difference;    
+  } */
+
+
 
 /* animation toggle */
 body:has([value="2D"]:checked) ol > li {

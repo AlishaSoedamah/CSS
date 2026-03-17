@@ -567,26 +567,6 @@ article > ul:nth-of-type(2) > li:last-child > ul {
 	}
 }
 
-/* checkbox */
-body:has([value="quirk"]:checked)
-{
-	background-image:
-		repeating-conic-gradient(
-			at
-				calc(var(--element-mouse-x, .5) * 100%) 
-				calc(var(--element-mouse-y, .5) * 100%),
-			crimson 0%,
-			darkorange 5%,
-			gold 8%,
-			yellowgreen 12%,
-			dodgerblue 15%,
-			purple 18%,
-			crimson 20%
-		);
-	/* animation: --spin 20s ease infinite; */
-
-}
-
 details {
 	z-index: 1;
 	position: absolute;
