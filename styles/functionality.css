@@ -57,15 +57,13 @@ body:has([value="black"]:checked)
 /* quirk mode */
 body:has([value="quirk"]:checked)
 {
-	  background: 
-		radial-gradient(circle, var(--trans)),
-		conic-gradient(from 180deg, var(--trans-wrap)),
-		radial-gradient(circle, var(--trans)),
-		conic-gradient(var(--solid-wrap));
+	background: 
+	radial-gradient(circle, var(--trans)),
+	conic-gradient(from 180deg, var(--trans-wrap)),
+	radial-gradient(circle, var(--trans)),
+	conic-gradient(var(--solid-wrap));
 	background-blend-mode: overlay;
 	height: 100%;
-	/* animation: --spin 20s ease infinite; */
-
 }
 
 html {
@@ -92,7 +90,6 @@ html {
   
 }
 
-
   /* html {
     --diff: calc(360deg / 7);
     --c1: oklch(60% 0.5 calc(var(--diff) * 1));
@@ -105,8 +102,6 @@ html {
     
     background-blend-mode: overlay, overlay, difference;    
   } */
-
-
 
 /* animation toggle */
 body:has([value="2D"]:checked) ol > li {
@@ -141,11 +136,8 @@ body:has([value="pause"]:checked) {
 }
 
 /* filters */
-body:has([value="eye-comfort"]:checked) main {
-	filter: sepia(40%);
-}
-
-/* body:has([value="noise"]:checked) main::before {
+body:has([value="noise-filter"]:checked) main::before {
+	z-index: 3;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -153,10 +145,11 @@ body:has([value="eye-comfort"]:checked) main {
 	width: 100vw;
 	height: 100vh;
 	mix-blend-mode: color-burn;
-	opacity: 30%;
-	filter: url(#noiseFilter) contrast(134%);
-	animation: bg-animation 2s infinite;
-} */
+	opacity: 100%;
+	filter: url(#noiseFilter) contrast(90%);
+	animation: --move-static 0.5s infinite;
+	pointer-events: none;
+}
 
 /* pressed */
 body:has([value="quirk"]:checked) form:nth-child(2) label:nth-child(1) {

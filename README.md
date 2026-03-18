@@ -274,6 +274,7 @@ Wat heb ik geleerd?
 ### dag 7 laatste dag!
 #### 18.3.2026
 Wat heb ik vandaag gedaan?
+Slinger animatie van de charms
 
 Hoeveel tijd heeft me dat gekost?
 
@@ -287,30 +288,39 @@ Wat heb ik geleerd?
 
 <details>
    <summary>Waar ik trots op ben!</summary>
-   Deze button:
+
+   - Deze button:
    <img src="readme/btn-site.png">
-   De charms op de chain:
+
+   - De charms op de chain:
    <img src="readme/charms.png">
+
+   - hem:
+   <img src="readme/little_guy.png">
 </details>
 
 ### ref
 CSS heeft zoveel. 
 
-[Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
-[Fun shapes with border-radius](https://9elements.github.io/fancy-border-radius/#61.39.31.24--.)
-[Inset](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/inset)
-[:has](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has)
-[last-of-type](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:last-of-type)
-[pixel-art refrence](https://itsfelpo.itch.io/frutiger-aero)
-[Play-pause functionality](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-play-state)
-[@function](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@function)
-[sibling-index](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-index)
-[hue-rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/hue-rotate)
+### Bronnen
+- [Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
+- [Fun shapes with border-radius](https://9elements.github.io/fancy-border-radius/#61.39.31.24--.)
+- [Inset](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/inset)
+- [:has](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has)
+- [last-of-type](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:last-of-type)
+- [pixel-art refrence](https://itsfelpo.itch.io/frutiger-aero)
+- [Play-pause functionality](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-play-state)
+- [@function](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@function)
+- [sibling-index](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-index)
+- [hue-rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/hue-rotate)
 [scherm deco](https://github.com/dy/linefont)
 [corner-shape](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/corner-shape)
 [corner-shape example](https://css-tricks.com/almanac/properties/c/corner-shape/)
 [paint-order](https://codepen.io/web-dot-dev/pen/dyxryKE)
-
 [animation ??? inspo](https://www.miriamsuzanne.com/2022/10/21/the-conic/)
+[playbtn shape](https://css-tricks.com/snippets/css/css-triangle/)
+[animation-fill-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-fill-mode)
+[animation-iteration-count](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-iteration-count)
+[pointer-events](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/pointer-events)
 
 > Layouts don't have to be boring - Nils
