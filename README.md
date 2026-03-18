@@ -307,7 +307,7 @@ most proud of?
 The final design of the panel looks nice
 
 - What experiments did you conduct that 'failed'?
-Animation mainly
+Animation mainly, turn knob doesn't work
 
 - Do you have new insights into how to leverage the power of CSS
 (or not)
