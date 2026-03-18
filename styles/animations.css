@@ -38,11 +38,12 @@
 	{
 		left: 500px;
 		opacity: 1;
+		scale: 1;
 	}
-	100%
-	{
-		left: 530px;
+	100% {
+		left: 510px;
 		opacity: 0;
+		scale: 0.1;
 	}
 }
 
@@ -78,7 +79,7 @@
 	}
 }
 
-@keyframes --spin {
+@keyframes --spin-3d {
 	0%, 100% {
 		transform: rotate(0deg);
 		scale: 0.3;
@@ -96,22 +97,26 @@
 	}
 }
 
-@keyframes --spin-3d {
+@keyframes --spin {
 	0%, 100% {
-		transform: rotate(0deg);
+		transform: rotateZ(0deg);
+		transform: rotateX(0deg);
+		transform: rotateY(0deg);
 		scale: 0.3;
-		/* transform: rotate3d(0 0 0); */
      	filter: hue-rotate(3);
 	}
 
 	50% {
-		transform: rotate(1turn);
-		scale: 1;
-     	filter: hue-rotate(0);
-		/* transform: rotate3d(1 1 1); */
+    	corner-shape: scoop;
+		border-radius: 50px;
+		transform: rotateZ(1turn);
+		transform: rotateX(1turn);
+		transform: rotateY(20deg);
+		scale: 1.3;
      	filter: hue-rotate(1rad);
 	}
 }
+
 
 @keyframes --knob {
 	0% {

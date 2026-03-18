@@ -90,19 +90,6 @@ html {
   
 }
 
-  /* html {
-    --diff: calc(360deg / 7);
-    --c1: oklch(60% 0.5 calc(var(--diff) * 1));
-    --c2: oklch(60% 0.5 calc(var(--diff) * 2));
-    --c3: oklch(60% 0.5 calc(var(--diff) * 3));
-    --c4: oklch(60% 0.5 calc(var(--diff) * 4));
-    --c5: oklch(60% 0.5 calc(var(--diff) * 5));
-    --c6: oklch(60% 0.5 calc(var(--diff) * 6));
-    --c7: oklch(60% 0.5 calc(var(--diff) * 7));
-    
-    background-blend-mode: overlay, overlay, difference;    
-  } */
-
 /* animation toggle */
 body:has([value="2D"]:checked) ol > li {
 	animation: --spin 20s ease infinite;
@@ -110,8 +97,8 @@ body:has([value="2D"]:checked) ol > li {
 }
 
 body:has([value="3D"]:checked) ol > li {
+	animation: --spin-3d 20s infinite;
 	animation-delay: calc(90ms * sibling-index());
-    animation: --spin-3d 20s infinite;
 }
 
 /* play/pause */
@@ -146,6 +133,7 @@ body:has([value="noise-filter"]:checked) main::before {
 	height: 100vh;
 	mix-blend-mode: color-burn;
 	opacity: 100%;
+	/* SANNE SAID IT WAS ALLOWED */
 	filter: url(#noiseFilter) contrast(90%);
 	animation: --move-static 0.5s infinite;
 	pointer-events: none;

@@ -273,13 +273,16 @@ Wat heb ik geleerd?
 
 ### dag 7 laatste dag!
 #### 18.3.2026
+Checkout met Sela 
+
 Wat heb ik vandaag gedaan?
-Slinger animatie van de charms
+Noise filter toegevoegd aan de typografie van de website gewerkt
 
 Hoeveel tijd heeft me dat gekost?
+De heledag
 
 Wat heb ik geleerd?
-
+hoe pointer-events: none; werkt
 
 ### Week 4
 <details>
@@ -299,8 +302,19 @@ Wat heb ik geleerd?
    <img src="readme/little_guy.png">
 </details>
 
-### ref
-CSS heeft zoveel. 
+- What went smoothly, what was challenging, and what are you
+most proud of?
+The final design of the panel looks nice
+
+- What experiments did you conduct that 'failed'?
+Animation mainly
+
+- Do you have new insights into how to leverage the power of CSS
+(or not)
+Too much stuff I didn;t know about, used sibling-index for a lot.
+
+- What do you want to explore further?
+DO more with @function and svg filters 
 
 ### Bronnen
 - [Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
@@ -313,14 +327,14 @@ CSS heeft zoveel.
 - [@function](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@function)
 - [sibling-index](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/sibling-index)
 - [hue-rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/hue-rotate)
-[scherm deco](https://github.com/dy/linefont)
-[corner-shape](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/corner-shape)
-[corner-shape example](https://css-tricks.com/almanac/properties/c/corner-shape/)
-[paint-order](https://codepen.io/web-dot-dev/pen/dyxryKE)
-[animation ??? inspo](https://www.miriamsuzanne.com/2022/10/21/the-conic/)
-[playbtn shape](https://css-tricks.com/snippets/css/css-triangle/)
-[animation-fill-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-fill-mode)
-[animation-iteration-count](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-iteration-count)
-[pointer-events](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/pointer-events)
+- [scherm deco](https://github.com/dy/linefont)
+- [corner-shape](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/corner-shape)
+- [corner-shape example](https://css-tricks.com/almanac/properties/c/corner-shape/)
+- [paint-order](https://codepen.io/web-dot-dev/pen/dyxryKE)
+- [animation ??? inspo](https://www.miriamsuzanne.com/2022/10/21/the-conic/)
+- [playbtn shape](https://css-tricks.com/snippets/css/css-triangle/)
+- [animation-fill-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-fill-mode)
+- [animation-iteration-count](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-iteration-count)
+- [pointer-events](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/pointer-events)
 
 > Layouts don't have to be boring - Nils

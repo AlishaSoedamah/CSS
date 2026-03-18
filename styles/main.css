@@ -29,20 +29,19 @@ h1 {
 h1 > div {
 	z-index: 1;
 	position: absolute;
-	left: 0;
 	width: 0;
 	height: 0;
+	bottom: 10px;
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent;
 	border-left: 50px solid white;
-	animation: --play-move 5s;
+	animation: --play-move 4s;
 	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
-	bottom: 10px;
+  	animation-iteration-count: 1;
 }
 
 h1 > span {
-  opacity: 0;
+	opacity: 0;
 	font-size: 2em;
 	letter-spacing: -20px;
 	color: rgb(0, 255, 60);
@@ -112,9 +111,6 @@ label {
 		height: 50%;
 		border-radius: 10px 10px 0 0; 
 		background: linear-gradient(#fff, #fff2);
-	}
-	&:active {
-		scale: 0.9;
 	}
 }
     input {
@@ -607,24 +603,22 @@ details > summary {
 details[open] {
 	color: var(--black);
 	background-color: rgb(203, 203, 203);
-	height: 180px;
+	height: 160px;
 }
 
 ol {
+	justify-items: center;
 	display: grid;
 	position: absolute;
 	z-index: -2;
 	list-style: none;
-	/* transform-style: preserve-3d; */
 }
 
 ol > li {
 	grid-area: 1/1;
 	perspective: 10px;
-		transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	width: calc(60px * sibling-index());
 	border: 2px solid white;
 	aspect-ratio: 1;
-	 /* border-radius: 50px; */
-    /* corner-shape: scoop; */
 }
