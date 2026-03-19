@@ -328,6 +328,21 @@ body:has([value="play"]:checked) {
 ```
 <img src="readme/red_final.png">
 
+<details>
+<summary>
+De dingen waar ik trots op ben
+</summary>
+<img src="readme/little_guy.png">
+<img src="readme/btn-site.png">
+<img src="readme/charms.png">
+
+Scherm details:
+<img src="readme/1.png">
+<img src="readme/2.png">
+<img src="readme/3.png">
+</details>
+
+
 #### Wat ging minder?
 Omdat ik het panel helemaal had geredesigned, had ik minder tijd om te werken aan de andere dingen op de site, o.a.: de achtergrondanimaties, de 3D animatie ook echt 3D en mooi maken, de quirk mode, de typografie bovenaan het panel en de chain met charms laten bewegen als je eroverheen gaat (nu staan ze stil). De draaiknop is er, maar werkt niet en heeft eigenlijk geen functionaliteit in de site. Ik zou in mijn vrije tijd misschien nog de animatie van de chain met charms toevoegen aan de site omdat ik weet hoe de code eruitziet voor deze animatie.
 
