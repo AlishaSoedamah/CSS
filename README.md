@@ -285,36 +285,57 @@ Wat heb ik geleerd?
 hoe pointer-events: none; werkt
 
 ### Week 4
-<details>
-   <summary>week 4 voortgang</summary>
-</details>
 
-<details>
-   <summary>Waar ik trots op ben!</summary>
+### Reflectie op het vak
 
-   - Deze button:
-   <img src="readme/btn-site.png">
+Tijdens deze 4 weken heb ik me kunnen verdiepen in diverse CSS selectors en functies waar ik nog nooit van had gehoord.
+Voor dit vak heb ik een control panel gemaakt dat van thema kan veranderen en de achtergrond kan besturen.
+Ik heb extra aandacht besteed aan de details van het panel en met dan met name de animaties op het scherm en de glossy buttons.
+<img src="readme/main.png">
+<img src="readme/light_final.png">
 
-   - De charms op de chain:
-   <img src="readme/charms.png">
 
-   - hem:
-   <img src="readme/little_guy.png">
-</details>
+#### Wat ging goed?
+Ik ben erg content met hoe het uiteindelijke panel eruitziet. Er zitten details in het scherm waarvan ik vind dat die erg goed gelukt zijn, zoals: de state van de animatie, op welke mode je zit en dat de deco elementen stoppen met hun eigen animatie als de playstate van de achtergrondanimatie is gepauzeerd, de state van de knop als iets is ingedrukt, de output die je krijgt als je op een button hebt geklikt en de buttons zelf. Mijn CSS experimenten heb ik goed tot een geheel gemaakt in het uiteindelijke panel. Ik ben blij met de style query thema's die de kleuren van het panel en de achtergrond veranderen. Vooral met :has, :checked en CSS variables werken vond ik heel leuk. Een voorbeeld hiervan is deze code: 
+```
+/* display input on screen */
+body:has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
+  content: "3D";
+}
 
-- What went smoothly, what was challenging, and what are you
-most proud of?
-The final design of the panel looks nice
+body:has([value="play"]:checked) {
+	--playstate-flag: play;
+	ol > li,
+	section dl dd:nth-child(3) > dl > dd > dl,
+	section dl dd:nth-child(2) > dl > div > dd,
+	form:nth-child(2) label:nth-child(4) {
+		animation-play-state: running;
+	}
+}
 
-- What experiments did you conduct that 'failed'?
-Animation mainly, turn knob doesn't work
+@container style(--playstate-flag: play)
+{	
+	fieldset > label:nth-child(2) {
+		background: radial-gradient(circle at 50% 90%, var(--clr-one-hover) 1px, var(--clr-two-hover), var(--clr-three-hover) 62%);
+	}
 
-- Do you have new insights into how to leverage the power of CSS
-(or not)
-Too much stuff I didn;t know about, used sibling-index for a lot.
+	fieldset label:nth-child(3) {
+		background-color: var(--btn);
+		background: radial-gradient(circle at 50% 90%, var(--clr-one) 1px, var(--clr-two) 41%, var(--clr-three) 62%);
+	}
+}
 
-- What do you want to explore further?
-DO more with @function and svg filters 
+```
+<img src="readme/red_final.png">
+
+#### Wat ging minder?
+Omdat ik het panel helemaal had geredesigned, had ik minder tijd om te werken aan de andere dingen op de site, o.a.: de achtergrondanimaties, de 3D animatie ook echt 3D en mooi maken, de quirk mode, de typografie bovenaan het panel en de chain met charms laten bewegen als je eroverheen gaat (nu staan ze stil). De draaiknop is er, maar werkt niet en heeft eigenlijk geen functionaliteit in de site. Ik zou in mijn vrije tijd misschien nog de animatie van de chain met charms toevoegen aan de site omdat ik weet hoe de code eruitziet voor deze animatie.
+
+#### Wat heb ik geleerd?
+Veel nieuwe CSS dingen die erg handig zijn om te gebruiken: :has, :not, style queries, sibling-index en sibling-count, hue-rotate, hoe je sin/cos/tan kan gebruiken om leuke vloeiende animaties te maken en SVG-filters. Ik vond CSS voor dit vak al best leuk maar nu heb ik nieuwe dingen geleerd die ik kan toepassen op mijn toekomstige werk.
+
+#### Wat wil ik verder nog ontdekken??
+Ik wil nog veel meer met SVG filters doen, omdat ik deze pas in de laatste week had ontdekt en nog niet door had hoeveel coole dingen je er mee kan. Qua animaties heb ik al best veel gedaan maar ik zou wel meer willen animeren met gradients omdat ik dit tot nu toe erg weinig heb gedaan.
 
 ### Bronnen
 - [Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
