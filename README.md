@@ -290,13 +290,13 @@ hoe pointer-events: none; werkt
 
 Tijdens deze 4 weken heb ik me kunnen verdiepen in diverse CSS selectors en functies waar ik nog nooit van had gehoord.
 Voor dit vak heb ik een control panel gemaakt dat van thema kan veranderen en de achtergrond kan besturen.
-Ik heb extra aandacht besteed aan de details van het panel en met dan met name de animaties op het scherm en de glossy buttons.
+Ik heb extra aandacht besteed aan de details van het panel en dan met name de animaties op het scherm en de glossy buttons.
 <img src="readme/main.png">
 <img src="readme/light_final.png">
 
 
 #### Wat ging goed?
-Ik ben erg content met hoe het uiteindelijke panel eruitziet. Er zitten details in het scherm waarvan ik vind dat die erg goed gelukt zijn, zoals: de state van de animatie, op welke mode je zit en dat de deco elementen stoppen met hun eigen animatie als de playstate van de achtergrondanimatie is gepauzeerd, de state van de knop als iets is ingedrukt, de output die je krijgt als je op een button hebt geklikt en de buttons zelf. Mijn CSS experimenten heb ik goed tot een geheel gemaakt in het uiteindelijke panel. Ik ben blij met de style query thema's die de kleuren van het panel en de achtergrond veranderen. Vooral met :has, :checked en CSS variables werken vond ik heel leuk. Een voorbeeld hiervan is deze code: 
+Ik ben erg content met hoe het uiteindelijke panel eruitziet. Er zitten details in het scherm waarvan ik vind dat die erg goed gelukt zijn, zoals: de state van de animatie, op welke mode je zit, dat de deco elementen stoppen met hun eigen animatie als de playstate van de achtergrondanimatie is gepauzeerd, de state van de knop als iets is ingedrukt, de output die je krijgt als je op een button hebt geklikt en de buttons zelf. Mijn CSS experimenten heb ik goed tot een geheel gemaakt in het uiteindelijke panel. Ik ben blij met de style query thema's die de kleuren van het panel en de achtergrond veranderen. Vooral met :has, :checked en CSS variables werken vond ik heel leuk. Een voorbeeld hiervan is deze code: 
 ```
 /* display input on screen */
 body:has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
