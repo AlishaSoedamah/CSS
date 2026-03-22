@@ -288,15 +288,22 @@ hoe pointer-events: none; werkt
 
 ### Reflectie op het vak
 
-Tijdens deze 4 weken heb ik me kunnen verdiepen in diverse CSS selectors en functies waar ik nog nooit van had gehoord.
-Voor dit vak heb ik een control panel gemaakt dat van thema kan veranderen en de achtergrond kan besturen.
+Tijdens deze 4 weken heb ik me kunnen verdiepen in diverse CSS selectors en functies waar ik nog nooit van had gehoord, en voor mij nieuw waren.
+Voor dit vak heb ik een control panel gemaakt dat van thema kan veranderen en de achtergrond animatie stopt en start.
 Ik heb extra aandacht besteed aan de details van het panel en dan met name de animaties op het scherm en de glossy buttons.
-<img src="readme/main.png">
-<img src="readme/light_final.png">
+<img src="readme/main.png" width="320px">
+<img src="readme/light_final.png" width="320px">
 
 
 #### Wat ging goed?
-Ik ben erg content met hoe het uiteindelijke panel eruitziet. Er zitten details in het scherm waarvan ik vind dat die erg goed gelukt zijn, zoals: de state van de animatie, op welke mode je zit, dat de deco elementen stoppen met hun eigen animatie als de playstate van de achtergrondanimatie is gepauzeerd, de state van de knop als iets is ingedrukt, de output die je krijgt als je op een button hebt geklikt en de buttons zelf. Mijn CSS experimenten heb ik goed tot een geheel gemaakt in het uiteindelijke panel. Ik ben blij met de style query thema's die de kleuren van het panel en de achtergrond veranderen. Vooral met :has, :checked en CSS variables werken vond ik heel leuk. Een voorbeeld hiervan is deze code: 
+Ik ben erg content met hoe het uiteindelijke panel eruitziet. Er zitten details in het scherm waarvan ik vind dat die erg goed gelukt zijn zoals: 
+- De state van de animatie
+- Op welke mode je zit
+- De deco elementen stoppen met hun eigen animatie als de playstate van de achtergrondanimatie is gepauzeerd
+- De state van de knop als iets is ingedrukt
+- De output die je krijgt als je op een button hebt geklikt en de buttons zelf
+
+Mijn CSS experimenten heb ik goed tot een geheel gemaakt in het uiteindelijke panel. Ik ben blij met de style query thema's die de kleuren van het panel en de achtergrond veranderen. Vooral met :has, :checked en CSS variables werken vond ik heel leuk. Een voorbeeld hiervan is deze code: 
 ```
 /* display input on screen */
 body:has([value="3D"]:checked) section dl > dd:nth-child(1) > dl > dd::after {
@@ -326,7 +333,7 @@ body:has([value="play"]:checked) {
 }
 
 ```
-<img src="readme/red_final.png">
+<img src="readme/red_final.png" width="320px">
 
 <details>
 <summary>
@@ -344,10 +351,25 @@ Scherm details:
 
 
 #### Wat ging minder?
-Omdat ik het panel helemaal had geredesigned, had ik minder tijd om te werken aan de andere dingen op de site, o.a.: de achtergrondanimaties, de 3D animatie ook echt 3D en mooi maken, de quirk mode, de typografie bovenaan het panel en de chain met charms laten bewegen als je eroverheen gaat (nu staan ze stil). De draaiknop is er, maar werkt niet en heeft eigenlijk geen functionaliteit in de site. Ik zou in mijn vrije tijd misschien nog de animatie van de chain met charms toevoegen aan de site omdat ik weet hoe de code eruitziet voor deze animatie.
+Omdat ik het panel helemaal had geredesigned had ik minder tijd om te werken aan de andere dingen op de site o.a.: 
+- De achtergrondanimaties
+- De 3D animatie ook echt 3D en mooi maken
+- De quirk mode
+- De typografie bovenaan het panel en de chain met charms laten bewegen als je eroverheen gaat (nu staan ze stil)
+- De draaiknop is er, maar werkt niet en heeft eigenlijk geen functionaliteit in de site
+
+notes: Ik zou in mijn vrije tijd misschien nog de animatie van de chain met charms toevoegen aan de site omdat ik weet hoe de code eruitziet voor deze animatie.
 
 #### Wat heb ik geleerd?
-Veel nieuwe CSS dingen die erg handig zijn om te gebruiken: :has, :not, style queries, sibling-index en sibling-count, hue-rotate, hoe je sin/cos/tan kan gebruiken om leuke vloeiende animaties te maken en SVG-filters. Ik vond CSS voor dit vak al best leuk maar nu heb ik nieuwe dingen geleerd die ik kan toepassen op mijn toekomstige werk.
+Veel nieuwe CSS dingen die erg handig zijn om te gebruiken: 
+- :has
+- :not
+- style queries
+- sibling-index en sibling-count
+- hue-rotate
+- Hoe je sin/cos/tan kan gebruiken om leuke vloeiende animaties te maken en SVG-filters.
+  
+Ik vond CSS voor dit vak al best leuk, maar nu heb ik nieuwe selectors geleerd die ik kan toepassen op mijn toekomstige werk.
 
 #### Wat wil ik verder nog ontdekken??
 Ik wil nog veel meer met SVG filters doen, omdat ik deze pas in de laatste week had ontdekt en nog niet door had hoeveel coole dingen je er mee kan. Qua animaties heb ik al best veel gedaan maar ik zou wel meer willen animeren met gradients omdat ik dit tot nu toe erg weinig heb gedaan.
