@@ -299,7 +299,7 @@ Ik heb extra aandacht besteed aan de details van het panel en dan met name de an
 Ik ben erg content met hoe het uiteindelijke panel eruitziet. Er zitten details in het scherm waarvan ik vind dat die erg goed gelukt zijn zoals: 
 - De state van de animatie
 - Op welke mode je zit
-- De deco elementen stoppen met hun eigen animatie als de playstate van de achtergrondanimatie is gepauzeerd
+- De deco elementen stoppen met hun eigen animatie als de playstate van de achtergrond animatie is gepauzeerd
 - De state van de knop als iets is ingedrukt
 - De output die je krijgt als je op een button hebt geklikt en de buttons zelf
 
@@ -352,7 +352,7 @@ Scherm details:
 
 #### Wat ging minder?
 Omdat ik het panel helemaal had geredesigned had ik minder tijd om te werken aan de andere dingen op de site o.a.: 
-- De achtergrondanimaties
+- De achtergrond animaties
 - De 3D animatie ook echt 3D en mooi maken
 - De quirk mode
 - De typografie bovenaan het panel en de chain met charms laten bewegen als je eroverheen gaat (nu staan ze stil)
@@ -372,7 +372,7 @@ Veel nieuwe CSS dingen die erg handig zijn om te gebruiken:
 Ik vond CSS voor dit vak al best leuk, maar nu heb ik nieuwe selectors geleerd die ik kan toepassen op mijn toekomstige werk.
 
 #### Wat wil ik verder nog ontdekken??
-Ik wil nog veel meer met SVG filters doen, omdat ik deze pas in de laatste week had ontdekt en nog niet door had hoeveel coole dingen je er mee kan. Qua animaties heb ik al best veel gedaan maar ik zou wel meer willen animeren met gradients omdat ik dit tot nu toe erg weinig heb gedaan.
+Ik wil nog veel meer met SVG filters doen, omdat ik deze pas in de laatste week had ontdekt en nog niet doorhad hoeveel coole dingen je er mee kan. Qua animaties heb ik al best veel gedaan maar ik zou wel meer willen animeren met gradients omdat ik dit tot nu toe erg weinig heb gedaan.
 
 ### Bronnen
 - [Inner shadow](https://css-tricks.com/snippets/css/css-box-shadow/)
